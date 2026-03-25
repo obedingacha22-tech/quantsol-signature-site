@@ -29,13 +29,20 @@ const directors = [
 
 const staff = [
   { name: "Obedi W. Ngacha", role: "Administrator", qualification: "Bachelor of Commerce (Honors)" },
-  { name: "Arthur N. Githuka", role: "Assistant QS", qualification: "" },
   { name: "Sammy W. Chonge", role: "Assistant QS", qualification: "" },
   { name: "Joseph M. Gathambi", role: "Assistant QS", qualification: "" },
-  { name: "Paul W. Mathenge", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
   { name: "Moses K. Kagwe", role: "Assistant QS", qualification: "" },
   { name: "Jennifer W. Wendo", role: "Assistant QS", qualification: "" },
   { name: "Brian K. Gicheru", role: "Assistant QS", qualification: "" },
+];
+
+const legacyMembers = [
+  {
+    name: "Paul W. Mathenge",
+    role: "Assistant QS",
+    qualification: "Bachelor of Quantity Surveying (Honors)",
+    tribute: "A dedicated professional whose commitment to excellence left a lasting impact on our team and the projects we deliver.",
+  },
 ];
 
 const TeamPage = () => {
