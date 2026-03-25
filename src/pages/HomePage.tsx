@@ -251,8 +251,12 @@ const HomePage = () => {
       </section>
 
       {/* Services */}
-      <section className="section-padding bg-surface">
-        <div className="section-container">
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={bgDigitalEstimation} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <div className="absolute inset-0 bg-surface/90" />
+        </div>
+        <div className="section-container relative z-10">
           <SectionHeader
             label="What We Do"
             title="Our Core Services"
