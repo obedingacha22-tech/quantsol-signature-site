@@ -29,13 +29,20 @@ const directors = [
 
 const staff = [
   { name: "Obedi W. Ngacha", role: "Administrator", qualification: "Bachelor of Commerce (Honors)" },
-  { name: "Arthur N. Githuka", role: "Assistant QS", qualification: "" },
   { name: "Sammy W. Chonge", role: "Assistant QS", qualification: "" },
   { name: "Joseph M. Gathambi", role: "Assistant QS", qualification: "" },
-  { name: "Paul W. Mathenge", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
   { name: "Moses K. Kagwe", role: "Assistant QS", qualification: "" },
   { name: "Jennifer W. Wendo", role: "Assistant QS", qualification: "" },
   { name: "Brian K. Gicheru", role: "Assistant QS", qualification: "" },
+];
+
+const legacyMembers = [
+  {
+    name: "Paul W. Mathenge",
+    role: "Assistant QS",
+    qualification: "Bachelor of Quantity Surveying (Honors)",
+    tribute: "A dedicated professional whose commitment to excellence left a lasting impact on our team and the projects we deliver.",
+  },
 ];
 
 const TeamPage = () => {
@@ -100,6 +107,30 @@ const TeamPage = () => {
                   <h4 className="text-sm font-semibold mb-1">{s.name}</h4>
                   <span className="text-xs text-accent">{s.role}</span>
                   {s.qualification && <p className="text-xs text-muted-foreground mt-2">{s.qualification}</p>}
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Legacy Members */}
+      <section className="section-padding">
+        <div className="section-container">
+          <SectionHeader label="In Memoriam" title="Our Legacy Members" description="Honoring the professionals who contributed to our journey and left an indelible mark on our firm." />
+          <div className="max-w-lg mx-auto">
+            {legacyMembers.map((m, i) => (
+              <ScrollReveal key={i}>
+                <div className="bg-card p-8 text-center border border-accent/20">
+                  <div className="w-20 h-20 bg-surface rounded-full mx-auto mb-4 flex items-center justify-center border border-accent/30">
+                    <span className="text-lg font-bold text-accent">
+                      {m.name.split(" ").map(n => n[0]).join("").slice(0, 2)}
+                    </span>
+                  </div>
+                  <h4 className="text-base font-semibold mb-1">{m.name}</h4>
+                  <span className="text-xs text-accent">{m.role}</span>
+                  {m.qualification && <p className="text-xs text-muted-foreground mt-1">{m.qualification}</p>}
+                  <p className="text-sm text-muted-foreground/80 mt-4 italic leading-relaxed">{m.tribute}</p>
                 </div>
               </ScrollReveal>
             ))}
