@@ -4,9 +4,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
 import projectHousing from "@/assets/project-housing.jpg";
 import projectRiverside from "@/assets/project-riverside.jpg";
-import projectKdf from "@/assets/project-kdf.jpg";
 import projectTilisi from "@/assets/project-tilisi.jpg";
 import projectOffice from "@/assets/project-office.jpg";
+import kdf1 from "@/assets/kdf-1.jpg";
+import kdf5 from "@/assets/kdf-5.jpg";
 
 const projects = [
   {
@@ -35,14 +36,14 @@ const projects = [
     client: "China Railway No 10 / Linda Project Company",
     cost: "Ksh 4.17 Billion",
     status: "60% Complete",
-    image: projectKdf,
+    image: kdf1,
   },
   {
     name: "KDF Accommodation – Affordable Housing",
     client: "China Railway No 10 / Linda Consortium",
     cost: "Ksh 17.9 Billion",
     status: "In Progress",
-    image: projectKdf,
+    image: kdf5,
   },
   {
     name: "Residential Apartments, Rhapta Road",
