@@ -289,8 +289,12 @@ const HomePage = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="section-padding">
-        <div className="section-container">
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={bgSiteSupervision} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <div className="absolute inset-0 bg-background/90" />
+        </div>
+        <div className="section-container relative z-10">
           <SectionHeader
             label="Why Quantsol"
             title="Why Choose Us"
