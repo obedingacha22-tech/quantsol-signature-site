@@ -36,7 +36,7 @@ const projects = [
     client: "China Railway No 10 / Linda Project Company",
     cost: "Ksh 4.17 Billion",
     status: "60% Complete",
-    image: projectKdf,
+    image: kdf1,
   },
   {
     name: "KDF Accommodation – Affordable Housing",
