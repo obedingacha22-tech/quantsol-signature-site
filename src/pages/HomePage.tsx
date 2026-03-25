@@ -214,8 +214,12 @@ const HomePage = () => {
       </section>
 
       {/* About Intro */}
-      <section className="section-padding">
-        <div className="section-container max-w-4xl text-center">
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={bgBoqReview} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <div className="absolute inset-0 bg-background/90" />
+        </div>
+        <div className="section-container max-w-4xl text-center relative z-10">
           <ScrollReveal>
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-4 block">Who We Are</span>
             <div className="gold-line mx-auto mb-6" />
