@@ -1,0 +1,133 @@
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
+import SectionHeader from "@/components/SectionHeader";
+
+const directors = [
+  {
+    name: "QS Michael Ngacha",
+    position: "Director",
+    qualifications: "Bachelor of Quantity Surveying (Honors), University of Nairobi",
+    registration: "BORAQS Registered (Q860)",
+    extra: "Certificate in Basic Engineering Draughting",
+  },
+  {
+    name: "QS Huria Karugu",
+    position: "Director",
+    qualifications: "Bachelor of Quantity Surveying (Honors), University of Nairobi",
+    registration: "BORAQS Registered (Q840)",
+    extra: "Diploma in Project Management",
+  },
+  {
+    name: "QS Humphrey Ngechu",
+    position: "Director",
+    qualifications: "Bachelor of Quantity Surveying (Honors), University of Nairobi",
+    registration: "BORAQS Registered (Q865)",
+    extra: "CPA (K), PRINCE2 Foundation",
+  },
+];
+
+const staff = [
+  { name: "Obedi W. Ngacha", role: "Administrator", qualification: "Bachelor of Commerce (Honors)" },
+  { name: "Arthur N. Githuka", role: "Assistant QS", qualification: "" },
+  { name: "Sammy W. Chonge", role: "Assistant QS", qualification: "" },
+  { name: "Joseph M. Gathambi", role: "Assistant QS", qualification: "" },
+  { name: "Paul W. Mathenge", role: "Assistant QS", qualification: "Bachelor of Quantity Surveying (Honors)" },
+  { name: "Moses K. Kagwe", role: "Assistant QS", qualification: "" },
+  { name: "Jennifer W. Wendo", role: "Assistant QS", qualification: "" },
+  { name: "Brian K. Gicheru", role: "Assistant QS", qualification: "" },
+];
+
+const TeamPage = () => {
+  return (
+    <main>
+      {/* Hero */}
+      <section className="bg-navy pt-32 pb-20">
+        <div className="section-container">
+          <ScrollReveal>
+            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-gold">Our Team</span>
+            <div className="gold-line mt-4 mb-6" />
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-primary-foreground max-w-3xl">
+              Meet the People Behind Our Success
+            </h1>
+            <p className="text-primary-foreground/60 text-lg mt-6 max-w-2xl">
+              A team of highly skilled and passionate professionals committed to delivering excellence in every project we undertake.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Directors */}
+      <section className="section-padding">
+        <div className="section-container">
+          <SectionHeader label="Leadership" title="Board of Directors" description="Each Director holds a Bachelor's Degree in Quantity Surveying from the University of Nairobi and is a Registered Quantity Surveyor with BORAQS." />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {directors.map((d, i) => (
+              <ScrollReveal key={i} delay={i * 0.15}>
+                <div className="bg-card card-hover p-8 text-center">
+                  <div className="w-24 h-24 bg-surface rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-accent">
+                      {d.name.split(" ").slice(1).map(n => n[0]).join("")}
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-semibold tracking-tight mb-1">{d.name}</h3>
+                  <span className="text-xs font-semibold tracking-widest uppercase text-accent">{d.position}</span>
+                  <div className="mt-4 pt-4 border-t border-border">
+                    <p className="text-xs text-muted-foreground mb-1">{d.qualifications}</p>
+                    <p className="text-xs font-medium text-accent">{d.registration}</p>
+                    {d.extra && <p className="text-xs text-muted-foreground mt-1">{d.extra}</p>}
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Staff */}
+      <section className="section-padding bg-surface">
+        <div className="section-container">
+          <SectionHeader label="Our People" title="Professional Staff" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {staff.map((s, i) => (
+              <ScrollReveal key={i} delay={(i % 4) * 0.1}>
+                <div className="bg-card p-6 text-center card-hover">
+                  <div className="w-16 h-16 bg-surface rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-base font-bold text-accent">
+                      {s.name.split(" ").map(n => n[0]).join("").slice(0,2)}
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-semibold mb-1">{s.name}</h4>
+                  <span className="text-xs text-accent">{s.role}</span>
+                  {s.qualification && <p className="text-xs text-muted-foreground mt-2">{s.qualification}</p>}
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section-padding text-center">
+        <div className="section-container">
+          <ScrollReveal>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+              Work With <span className="text-accent">Experienced Professionals</span>
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto mb-8">
+              Our team is ready to bring expertise and dedication to your next project.
+            </p>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-10 py-4 text-xs font-semibold tracking-widest uppercase hover:bg-accent/90 transition-colors"
+            >
+              Contact Our Team <ArrowRight size={14} />
+            </Link>
+          </ScrollReveal>
+        </div>
+      </section>
+    </main>
+  );
+};
+
+export default TeamPage;
