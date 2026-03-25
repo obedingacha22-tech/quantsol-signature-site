@@ -13,6 +13,9 @@ import projectHousing from "@/assets/project-housing.jpg";
 import projectRiverside from "@/assets/project-riverside.jpg";
 import kdf1 from "@/assets/kdf-1.jpg";
 import projectTilisi from "@/assets/project-tilisi.jpg";
+import bgBoqReview from "@/assets/bg-boq-review.jpg";
+import bgDigitalEstimation from "@/assets/bg-digital-estimation.jpg";
+import bgSiteSupervision from "@/assets/bg-site-supervision.jpg";
 
 const services = [
   {
