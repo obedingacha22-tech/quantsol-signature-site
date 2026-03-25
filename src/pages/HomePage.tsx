@@ -13,6 +13,9 @@ import projectHousing from "@/assets/project-housing.jpg";
 import projectRiverside from "@/assets/project-riverside.jpg";
 import kdf1 from "@/assets/kdf-1.jpg";
 import projectTilisi from "@/assets/project-tilisi.jpg";
+import bgBoqReview from "@/assets/bg-boq-review.jpg";
+import bgDigitalEstimation from "@/assets/bg-digital-estimation.jpg";
+import bgSiteSupervision from "@/assets/bg-site-supervision.jpg";
 
 const services = [
   {
@@ -211,8 +214,12 @@ const HomePage = () => {
       </section>
 
       {/* About Intro */}
-      <section className="section-padding">
-        <div className="section-container max-w-4xl text-center">
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={bgBoqReview} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <div className="absolute inset-0 bg-background/90" />
+        </div>
+        <div className="section-container max-w-4xl text-center relative z-10">
           <ScrollReveal>
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-4 block">Who We Are</span>
             <div className="gold-line mx-auto mb-6" />
@@ -244,8 +251,12 @@ const HomePage = () => {
       </section>
 
       {/* Services */}
-      <section className="section-padding bg-surface">
-        <div className="section-container">
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={bgDigitalEstimation} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <div className="absolute inset-0 bg-surface/90" />
+        </div>
+        <div className="section-container relative z-10">
           <SectionHeader
             label="What We Do"
             title="Our Core Services"
@@ -278,8 +289,12 @@ const HomePage = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="section-padding">
-        <div className="section-container">
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={bgSiteSupervision} alt="" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <div className="absolute inset-0 bg-background/90" />
+        </div>
+        <div className="section-container relative z-10">
           <SectionHeader
             label="Why Quantsol"
             title="Why Choose Us"
