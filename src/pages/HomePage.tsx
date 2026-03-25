@@ -8,6 +8,7 @@ import {
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
 import CountUp from "@/components/CountUp";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import heroImg from "@/assets/hero-building.jpg";
 import projectHousing from "@/assets/project-housing.jpg";
 import projectRiverside from "@/assets/project-riverside.jpg";
