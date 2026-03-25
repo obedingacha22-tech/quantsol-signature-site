@@ -8,6 +8,7 @@ import {
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
 import CountUp from "@/components/CountUp";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import heroImg from "@/assets/hero-building.jpg";
 import projectHousing from "@/assets/project-housing.jpg";
 import projectRiverside from "@/assets/project-riverside.jpg";
@@ -118,15 +119,15 @@ const HomePage = () => {
     <main>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        <motion.div
-          initial={{ scale: 1.1, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 1.2, ease: [0.23, 1, 0.32, 1] }}
-          className="absolute inset-0"
-        >
-          <img src={heroImg} alt="Modern building in Kenya" className="w-full h-full object-cover" width={1920} height={1080} />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/50" />
-        </motion.div>
+        <HeroSlideshow
+          images={[
+            { src: heroImg, alt: "Modern building in Kenya" },
+            { src: bgBoqReview, alt: "Office planning and BoQ review" },
+            { src: bgDigitalEstimation, alt: "Digital cost estimation" },
+            { src: bgSiteSupervision, alt: "Site supervision and measurement" },
+          ]}
+          interval={6000}
+        />
 
         <div className="section-container relative z-10 pt-20">
           <div className="max-w-3xl">
