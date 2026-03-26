@@ -343,9 +343,7 @@ const HomePage = () => {
                   <div className="absolute inset-0 bg-navy/50 group-hover:bg-navy/70 transition-colors duration-500" />
                   <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
                     <div className="flex items-center gap-3 mb-2">
-                      <span className="text-xs font-mono tracking-widest text-gold">{p.cost}</span>
-                      <span className="text-xs text-primary-foreground/50">•</span>
-                      <span className="text-xs text-primary-foreground/60">{p.status}</span>
+                      <span className="text-xs font-mono tracking-widest text-gold">{p.status}</span>
                     </div>
                     <h3 className="text-lg md:text-xl font-semibold text-primary-foreground">{p.name}</h3>
                   </div>
