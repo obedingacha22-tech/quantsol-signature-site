@@ -38,7 +38,7 @@ const staff = [
 
 const legacyMembers = [
   {
-    name: "Paul W. Mathenge",
+    name: "PAUL W. MATHENGE",
     role: "Assistant QS",
     qualification: "Bachelor of Quantity Surveying (Honors)",
     tribute: "A dedicated professional whose commitment to excellence left a lasting impact on our team and the projects we deliver.",
