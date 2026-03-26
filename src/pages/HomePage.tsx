@@ -76,10 +76,10 @@ const whyUs = [
 ];
 
 const projects = [
-  { name: "Affordable Housing – Tilisi", cost: "Ksh 1.05B", status: "Completed", image: projectHousing },
-  { name: "KDF Housing Project", cost: "Ksh 22.07B", status: "In Progress", image: kdf1 },
-  { name: "Riverside Apartments", cost: "Ksh 1.2B", status: "Completed", image: projectRiverside },
-  { name: "Tilisi Mid-Range Housing", cost: "Ksh 1.2B", status: "95% Complete", image: projectTilisi },
+  { name: "KDF Housing Project — PPP & Affordable", status: "Ongoing", image: kdf1 },
+  { name: "Maisha Development", status: "Ongoing", image: projectTilisi },
+  { name: "Spring Valley Residential", status: "Ongoing", image: projectRiverside },
+  { name: "Kigali Office Block", status: "Award Stage", image: projectHousing },
 ];
 
 const stats = [
