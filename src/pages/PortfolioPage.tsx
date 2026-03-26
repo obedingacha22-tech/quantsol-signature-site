@@ -11,74 +11,88 @@ import kdf1 from "@/assets/kdf-1.jpg";
 
 const projects = [
   {
-    name: "Affordable Housing at Tilisi",
+    name: "Maisha Development",
     client: "Nirma Holdings Ltd",
-    cost: "Ksh 1.05 Billion",
-    status: "Complete",
-    image: projectHousing,
-  },
-  {
-    name: "Mid-Range Housing at Tilisi",
-    client: "Nirma Holdings Ltd",
-    cost: "Ksh 1.2 Billion",
-    status: "95% Complete",
+    status: "Ongoing",
     image: projectTilisi,
   },
   {
-    name: "Residential Apartments, Riverside Drive",
-    client: "Kopoa Developers Ltd",
-    cost: "Ksh 1.2 Billion",
-    status: "Complete",
+    name: "Spring Valley Residential Development",
+    client: "Rushmore Investment Ltd",
+    status: "Ongoing",
     image: projectRiverside,
   },
   {
-    name: "KDF Accommodation Housing PPP & Affordable Housing",
-    client: "China Railway No 10 Engineering Co Ltd / Linda Project Company",
-    cost: "Ksh 22.07 Billion (Combined)",
-    status: "In Progress",
+    name: "Kyuna 39",
+    client: "Mucyo & Hope",
+    status: "Design",
+    image: projectHousing,
+  },
+  {
+    name: "Kigali Office Block Development",
+    client: "Mayfair Rwanda Ltd",
+    status: "Award",
+    image: projectOffice,
+  },
+  {
+    name: "Office Fitout Mayfair Centre",
+    client: "Mayfair Kenya Ltd",
+    status: "Ongoing",
+    image: projectOffice,
+  },
+  {
+    name: "School Lane Apartments",
+    client: "Panorama Ltd",
+    status: "Design",
+    image: projectHousing,
+  },
+  {
+    name: "KDF Accommodation Housing — PPP & Affordable",
+    client: "CREC 10",
+    status: "Ongoing",
     image: kdf1,
   },
   {
-    name: "Residential Apartments, Rhapta Road",
-    client: "Kopoa Developers Ltd",
-    cost: "Ksh 1.5 Billion",
-    status: "70% Complete",
+    name: "Aeroclub Kitchen",
+    client: "Aeroclub EA",
+    status: "Design",
+    image: projectOffice,
+  },
+  {
+    name: "Kitchen & Ablution Block",
+    client: "Loreto Convent",
+    status: "Ongoing",
+    image: projectHousing,
+  },
+  {
+    name: "Various Bank Fitouts (BoQ)",
+    client: "Prime Bank",
+    status: "Ongoing",
+    image: projectOffice,
+  },
+  {
+    name: "New Rehema House Fitout",
+    client: "NFDK",
+    status: "Ongoing",
     image: projectRiverside,
   },
   {
-    name: "56 Residential Apartments, Karuna Road",
-    client: "Panorama Ltd",
-    cost: "Ksh 850 Million",
-    status: "Precontract",
-    image: projectOffice,
-  },
-  {
-    name: "3 Residential Development, Kibagare Loresho",
-    client: "Andrea Ltd",
-    cost: "Ksh 205 Million",
-    status: "Complete",
+    name: "Hacienda Michael",
+    client: "Njau Ngacha Family",
+    status: "Ongoing",
     image: projectHousing,
   },
   {
-    name: "5 Residential Development, Spring Valley",
-    client: "Rushmore Investment Ltd",
-    cost: "Ksh 450 Million",
-    status: "50% Complete",
+    name: "Moran Hotel",
+    client: "Centcrete Ltd",
+    status: "Award",
+    image: projectRiverside,
+  },
+  {
+    name: "Masalani Works",
+    client: "DMS",
+    status: "Ongoing",
     image: projectTilisi,
-  },
-  {
-    name: "Office Block Development",
-    client: "Mayfair Insurance Rwanda Ltd",
-    cost: "RWF 9.5 Billion",
-    status: "Award Stage",
-    image: projectOffice,
-  },
-  {
-    name: "186 Residential Apartments, Mombasa Road",
-    client: "Deer Premium Investment Ltd",
-    cost: "Ksh 1.3 Billion",
-    status: "40% Complete",
-    image: projectHousing,
   },
 ];
 
@@ -131,12 +145,9 @@ const PortfolioPage = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="p-6">
+                   <div className="p-6">
                     <h3 className="text-base font-semibold tracking-tight mb-2">{p.name}</h3>
-                    <p className="text-xs text-muted-foreground mb-3">{p.client}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm font-mono font-semibold text-accent">{p.cost}</span>
-                    </div>
+                    <p className="text-xs text-muted-foreground">{p.client}</p>
                   </div>
                 </div>
               </ScrollReveal>
