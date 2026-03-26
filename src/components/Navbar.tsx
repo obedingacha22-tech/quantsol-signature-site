@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -36,11 +37,9 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${navBg}`}>
       <div className="section-container flex items-center justify-between h-20">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold tracking-tight text-primary-foreground">
-            QUANTSOL
-          </span>
-          <span className="text-gold text-xs font-medium tracking-widest uppercase hidden sm:inline">
-            Consultants
+          <img src={logo} alt="Quantsol Consultants" className="h-10 w-auto" />
+          <span className="text-sm font-bold tracking-widest uppercase text-primary-foreground">
+            QUANTSOL CONSULTANTS
           </span>
         </Link>
 
