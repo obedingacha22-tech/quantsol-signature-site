@@ -32,18 +32,11 @@ const projects = [
     image: projectRiverside,
   },
   {
-    name: "KDF Accommodation Housing PPP",
-    client: "China Railway No 10 / Linda Project Company",
-    cost: "Ksh 4.17 Billion",
-    status: "60% Complete",
-    image: kdf1,
-  },
-  {
-    name: "KDF Accommodation – Affordable Housing",
-    client: "China Railway No 10 / Linda Consortium",
-    cost: "Ksh 17.9 Billion",
+    name: "KDF Accommodation Housing PPP & Affordable Housing",
+    client: "China Railway No 10 Engineering Co Ltd / Linda Project Company",
+    cost: "Ksh 22.07 Billion (Combined)",
     status: "In Progress",
-    image: kdf5,
+    image: kdf1,
   },
   {
     name: "Residential Apartments, Rhapta Road",

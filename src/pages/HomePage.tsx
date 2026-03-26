@@ -77,7 +77,7 @@ const whyUs = [
 
 const projects = [
   { name: "Affordable Housing – Tilisi", cost: "Ksh 1.05B", status: "Completed", image: projectHousing },
-  { name: "KDF Housing Project", cost: "Ksh 4.17B", status: "60% Complete", image: kdf1 },
+  { name: "KDF Housing Project", cost: "Ksh 22.07B", status: "In Progress", image: kdf1 },
   { name: "Riverside Apartments", cost: "Ksh 1.2B", status: "Completed", image: projectRiverside },
   { name: "Tilisi Mid-Range Housing", cost: "Ksh 1.2B", status: "95% Complete", image: projectTilisi },
 ];
