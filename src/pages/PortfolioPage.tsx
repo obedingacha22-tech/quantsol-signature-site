@@ -7,7 +7,7 @@ import projectRiverside from "@/assets/project-riverside.jpg";
 import projectTilisi from "@/assets/project-tilisi.jpg";
 import projectOffice from "@/assets/project-office.jpg";
 import kdf1 from "@/assets/kdf-1.jpg";
-import kdf5 from "@/assets/kdf-5.jpg";
+
 
 const projects = [
   {
