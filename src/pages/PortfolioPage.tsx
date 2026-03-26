@@ -145,12 +145,9 @@ const PortfolioPage = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="p-6">
+                   <div className="p-6">
                     <h3 className="text-base font-semibold tracking-tight mb-2">{p.name}</h3>
-                    <p className="text-xs text-muted-foreground mb-3">{p.client}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm font-mono font-semibold text-accent">{p.cost}</span>
-                    </div>
+                    <p className="text-xs text-muted-foreground">{p.client}</p>
                   </div>
                 </div>
               </ScrollReveal>
