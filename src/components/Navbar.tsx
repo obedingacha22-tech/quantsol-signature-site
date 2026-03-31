@@ -39,7 +39,7 @@ const Navbar = () => {
         <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="Quantsol Consultants" className="h-14 w-auto" />
           <span className="text-sm font-bold tracking-widest uppercase text-primary-foreground">
-            QUANTSOL CONSULTANTS
+            QUANTSOL CONSULTANTS LIMITED
           </span>
         </Link>
 
