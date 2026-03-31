@@ -1,4 +1,5 @@
 import { useState, FormEvent } from "react";
+import SEO from "@/components/SEO";
 import { MapPin, Phone, Mail, MessageCircle, Send } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
@@ -24,6 +25,11 @@ const ContactPage = () => {
 
   return (
     <main>
+      <SEO
+        title="Contact Us — Get a Quote"
+        description="Contact Quantsol Consultants Limited for Quantity Surveying, Project Management & Facilities Management services in Kenya. Call 0712 504 467."
+        path="/contact"
+      />
       {/* Hero */}
       <section className="bg-navy pt-32 pb-20">
         <div className="section-container">
