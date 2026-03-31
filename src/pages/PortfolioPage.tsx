@@ -106,6 +106,11 @@ const clients = [
 const PortfolioPage = () => {
   return (
     <main>
+      <SEO
+        title="Portfolio — Construction Projects Kenya"
+        description="Explore Quantsol's portfolio of 25+ construction and real estate projects across Kenya worth over Ksh 30 Billion, including KDF Housing, Tilisi, and more."
+        path="/portfolio"
+      />
       {/* Hero */}
       <section className="bg-navy pt-32 pb-20">
         <div className="section-container">

@@ -22,6 +22,11 @@ const goals = [
 const AboutPage = () => {
   return (
     <main>
+      <SEO
+        title="About Us — Quantity Surveying Experts Kenya"
+        description="Learn about Quantsol Consultants Limited, a BORAQS-registered firm with 10+ years delivering cost-effective construction consultancy across Kenya and East Africa."
+        path="/about"
+      />
       {/* Hero */}
       <section className="bg-navy pt-32 pb-20">
         <div className="section-container">

@@ -118,6 +118,11 @@ const testimonials = [
 const HomePage = () => {
   return (
     <main>
+      <SEO
+        title="Quantity Surveying & Project Management Kenya"
+        description="Quantsol Consultants Limited — leading Kenyan consultancy firm specializing in Quantity Surveying, Project Management & Facilities Management. 10+ years, Ksh 30B+ portfolio."
+        path="/"
+      />
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <HeroSlideshow

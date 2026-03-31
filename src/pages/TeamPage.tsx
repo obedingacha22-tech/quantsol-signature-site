@@ -49,6 +49,11 @@ const legacyMembers = [
 const TeamPage = () => {
   return (
     <main>
+      <SEO
+        title="Our Team — Registered Quantity Surveyors"
+        description="Meet the BORAQS-registered Quantity Surveyors and construction professionals behind Quantsol Consultants Limited."
+        path="/team"
+      />
       {/* Hero */}
       <section className="bg-navy pt-32 pb-20">
         <div className="section-container">

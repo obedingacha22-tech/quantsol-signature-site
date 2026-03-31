@@ -44,6 +44,11 @@ const benefits = [
 const ServicesPage = () => {
   return (
     <main>
+      <SEO
+        title="Services — Quantity Surveying, Project & Facilities Management"
+        description="Comprehensive Quantity Surveying, Project Management & Facilities Management services in Kenya. Cost estimation, BoQ preparation, tendering & procurement advice."
+        path="/services"
+      />
       {/* Hero */}
       <section className="bg-navy pt-32 pb-20">
         <div className="section-container">
