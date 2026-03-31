@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 import { ArrowRight, Target, Eye, Heart, Star, Users, Lightbulb, MessageSquare, Shield } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
