@@ -8,6 +8,15 @@ import projectRiverside from "@/assets/project-riverside.jpg";
 import projectTilisi from "@/assets/project-tilisi.jpg";
 import projectOffice from "@/assets/project-office.jpg";
 import kdf1 from "@/assets/kdf-1.jpg";
+import projectMayfairFitout from "@/assets/project-mayfair-fitout.jpg";
+import projectSchoolLane from "@/assets/project-school-lane.jpg";
+import projectAeroclub from "@/assets/project-aeroclub.jpg";
+import projectLoreto from "@/assets/project-loreto.jpg";
+import projectBankFitout from "@/assets/project-bank-fitout.jpg";
+import projectRehema from "@/assets/project-rehema.jpg";
+import projectHacienda from "@/assets/project-hacienda.jpg";
+import projectMoran from "@/assets/project-moran.jpg";
+import projectMasalani from "@/assets/project-masalani.jpg";
 
 
 const projects = [
@@ -39,13 +48,13 @@ const projects = [
     name: "Office Fitout Mayfair Centre",
     client: "Mayfair Kenya Ltd",
     status: "Ongoing",
-    image: projectOffice,
+    image: projectMayfairFitout,
   },
   {
     name: "School Lane Apartments",
     client: "Panorama Ltd",
     status: "Design",
-    image: projectHousing,
+    image: projectSchoolLane,
   },
   {
     name: "KDF Accommodation Housing — PPP & Affordable",
@@ -57,43 +66,43 @@ const projects = [
     name: "Aeroclub Kitchen",
     client: "Aeroclub EA",
     status: "Design",
-    image: projectOffice,
+    image: projectAeroclub,
   },
   {
     name: "Kitchen & Ablution Block",
     client: "Loreto Convent",
     status: "Ongoing",
-    image: projectHousing,
+    image: projectLoreto,
   },
   {
     name: "Various Bank Fitouts (BoQ)",
     client: "Prime Bank",
     status: "Ongoing",
-    image: projectOffice,
+    image: projectBankFitout,
   },
   {
     name: "New Rehema House Fitout",
     client: "NFDK",
     status: "Ongoing",
-    image: projectRiverside,
+    image: projectRehema,
   },
   {
     name: "Hacienda Michael",
     client: "Njau Ngacha Family",
     status: "Ongoing",
-    image: projectHousing,
+    image: projectHacienda,
   },
   {
     name: "Moran Hotel",
     client: "Centcrete Ltd",
     status: "Award",
-    image: projectRiverside,
+    image: projectMoran,
   },
   {
     name: "Masalani Works",
     client: "DMS",
     status: "Ongoing",
-    image: projectTilisi,
+    image: projectMasalani,
   },
 ];
 
