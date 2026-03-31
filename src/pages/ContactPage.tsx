@@ -1,4 +1,5 @@
 import { useState, FormEvent } from "react";
+import SEO from "@/components/SEO";
 import { MapPin, Phone, Mail, MessageCircle, Send } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
