@@ -8,6 +8,15 @@ import projectRiverside from "@/assets/project-riverside.jpg";
 import projectTilisi from "@/assets/project-tilisi.jpg";
 import projectOffice from "@/assets/project-office.jpg";
 import kdf1 from "@/assets/kdf-1.jpg";
+import projectMayfairFitout from "@/assets/project-mayfair-fitout.jpg";
+import projectSchoolLane from "@/assets/project-school-lane.jpg";
+import projectAeroclub from "@/assets/project-aeroclub.jpg";
+import projectLoreto from "@/assets/project-loreto.jpg";
+import projectBankFitout from "@/assets/project-bank-fitout.jpg";
+import projectRehema from "@/assets/project-rehema.jpg";
+import projectHacienda from "@/assets/project-hacienda.jpg";
+import projectMoran from "@/assets/project-moran.jpg";
+import projectMasalani from "@/assets/project-masalani.jpg";
 
 
 const projects = [
