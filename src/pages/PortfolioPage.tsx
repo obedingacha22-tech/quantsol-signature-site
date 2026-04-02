@@ -160,7 +160,7 @@ const PortfolioPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((p, i) => (
               <ScrollReveal key={i} delay={(i % 3) * 0.1}>
-                <div className="group overflow-hidden card-hover bg-card">
+                <div className={`group overflow-hidden card-hover bg-card ${p.sites ? "md:col-span-2 lg:col-span-3" : ""}`}>
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <img
                       src={p.image}
@@ -178,10 +178,32 @@ const PortfolioPage = () => {
                       </span>
                     </div>
                   </div>
-                   <div className="p-6">
+                  <div className="p-6">
                     <h3 className="text-base font-semibold tracking-tight mb-2">{p.name}</h3>
                     <p className="text-xs text-muted-foreground">{p.client}</p>
                   </div>
+                  {p.sites && (
+                    <div className="px-6 pb-6">
+                      <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold mb-4">Project Sites</p>
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {p.sites.map((site, j) => (
+                          <div key={j} className="group/site overflow-hidden">
+                            <div className="relative aspect-[16/10] overflow-hidden rounded-sm">
+                              <img
+                                src={site.image}
+                                alt={`KDF Housing — ${site.name}`}
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover/site:scale-105"
+                                loading="lazy"
+                                width={400}
+                                height={250}
+                              />
+                            </div>
+                            <p className="text-sm font-medium mt-2 text-center">{site.name}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </ScrollReveal>
             ))}
