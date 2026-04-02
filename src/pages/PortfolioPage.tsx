@@ -187,7 +187,7 @@ const PortfolioPage = () => {
                       <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold mb-4">Project Sites</p>
                       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {p.sites.map((site, j) => (
-                          <div key={j} className="group/site overflow-hidden">
+                          <a key={j} href={site.image} target="_blank" rel="noopener noreferrer" className="group/site overflow-hidden cursor-pointer block">
                             <div className="relative aspect-[16/10] overflow-hidden rounded-sm">
                               <img
                                 src={site.image}
@@ -197,9 +197,12 @@ const PortfolioPage = () => {
                                 width={400}
                                 height={250}
                               />
+                              <div className="absolute inset-0 bg-navy/0 group-hover/site:bg-navy/30 transition-colors duration-300 flex items-center justify-center">
+                                <span className="text-primary-foreground text-xs font-semibold tracking-widest uppercase opacity-0 group-hover/site:opacity-100 transition-opacity duration-300">View</span>
+                              </div>
                             </div>
                             <p className="text-sm font-medium mt-2 text-center">{site.name}</p>
-                          </div>
+                          </a>
                         ))}
                       </div>
                     </div>
