@@ -23,7 +23,15 @@ import projectMoran from "@/assets/project-moran.jpg";
 import projectMasalani from "@/assets/project-masalani.jpg";
 
 
-const projects = [
+interface Project {
+  name: string;
+  client: string;
+  status: string;
+  image: string;
+  sites?: { name: string; image: string }[];
+}
+
+const projects: Project[] = [
   {
     name: "Maisha Development",
     client: "Nirma Holdings Ltd",
@@ -65,6 +73,12 @@ const projects = [
     client: "CREC 10",
     status: "Ongoing",
     image: kdf1,
+    sites: [
+      { name: "Langata", image: kdfLangata },
+      { name: "Roysambu", image: kdfRoysambu },
+      { name: "Embakasi", image: kdfEmbakasi },
+      { name: "Kahawa", image: kdfKahawa },
+    ],
   },
   {
     name: "Aeroclub Kitchen",
