@@ -3,15 +3,13 @@ import SEO from "@/components/SEO";
 import { ArrowRight } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import SectionHeader from "@/components/SectionHeader";
+import SiteGallery from "@/components/SiteGallery";
 import projectHousing from "@/assets/project-housing.jpg";
 import projectRiverside from "@/assets/project-riverside.jpg";
 import projectTilisi from "@/assets/project-tilisi.jpg";
 import projectOffice from "@/assets/project-office.jpg";
 import kdf1 from "@/assets/kdf-1.jpg";
 import kdfLangata from "@/assets/kdf-langata.jpg";
-import kdfRoysambu from "@/assets/kdf-roysambu.jpg";
-import kdfEmbakasi from "@/assets/kdf-embakasi.jpg";
-import kdfKahawa from "@/assets/kdf-kahawa.jpg";
 import projectMayfairFitout from "@/assets/project-mayfair-fitout.jpg";
 import projectSchoolLane from "@/assets/project-school-lane.jpg";
 import projectAeroclub from "@/assets/project-aeroclub.jpg";
@@ -22,106 +20,72 @@ import projectHacienda from "@/assets/project-hacienda.jpg";
 import projectMoran from "@/assets/project-moran.jpg";
 import projectMasalani from "@/assets/project-masalani.jpg";
 
+// Roysambu photos
+import roysambu1 from "@/assets/roysambu-1.jpg";
+import roysambu2 from "@/assets/roysambu-2.jpg";
+import roysambu3 from "@/assets/roysambu-3.jpg";
+import roysambu4 from "@/assets/roysambu-4.jpg";
+import roysambu5 from "@/assets/roysambu-5.jpg";
+import roysambu6 from "@/assets/roysambu-6.jpg";
+import roysambu7 from "@/assets/roysambu-7.jpg";
+import roysambu8 from "@/assets/roysambu-8.jpg";
+import roysambu9 from "@/assets/roysambu-9.jpg";
+import roysambu10 from "@/assets/roysambu-10.jpg";
+
+// Kahawa photos
+import kahawa1 from "@/assets/kahawa-1.jpg";
+import kahawa2 from "@/assets/kahawa-2.jpg";
+import kahawa3 from "@/assets/kahawa-3.jpg";
+import kahawa4 from "@/assets/kahawa-4.jpg";
+import kahawa5 from "@/assets/kahawa-5.jpg";
+import kahawa6 from "@/assets/kahawa-6.jpg";
+import kahawa7 from "@/assets/kahawa-7.jpg";
+import kahawa8 from "@/assets/kahawa-8.jpg";
+import kahawa9 from "@/assets/kahawa-9.jpg";
+import kahawa10 from "@/assets/kahawa-10.jpg";
+
+// Embakasi photos
+import embakasi1 from "@/assets/embakasi-1.jpg";
+import embakasi2 from "@/assets/embakasi-2.jpg";
+import embakasi3 from "@/assets/embakasi-3.jpg";
+import embakasi4 from "@/assets/embakasi-4.jpg";
+import embakasi5 from "@/assets/embakasi-5.jpg";
+import embakasi6 from "@/assets/embakasi-6.jpg";
+import embakasi7 from "@/assets/embakasi-7.jpg";
+import embakasi8 from "@/assets/embakasi-8.jpg";
+import embakasi9 from "@/assets/embakasi-9.jpg";
+import embakasi10 from "@/assets/embakasi-10.jpg";
+
+const kdfSites = [
+  { name: "Langata", images: [kdfLangata] },
+  { name: "Roysambu", images: [roysambu1, roysambu2, roysambu3, roysambu4, roysambu5, roysambu6, roysambu7, roysambu8, roysambu9, roysambu10] },
+  { name: "Embakasi", images: [embakasi1, embakasi2, embakasi3, embakasi4, embakasi5, embakasi6, embakasi7, embakasi8, embakasi9, embakasi10] },
+  { name: "Kahawa", images: [kahawa1, kahawa2, kahawa3, kahawa4, kahawa5, kahawa6, kahawa7, kahawa8, kahawa9, kahawa10] },
+];
 
 interface Project {
   name: string;
   client: string;
   status: string;
   image: string;
-  sites?: { name: string; image: string }[];
+  isKdf?: boolean;
 }
 
 const projects: Project[] = [
-  {
-    name: "Maisha Development",
-    client: "Nirma Holdings Ltd",
-    status: "Ongoing",
-    image: projectTilisi,
-  },
-  {
-    name: "Spring Valley Residential Development",
-    client: "Rushmore Investment Ltd",
-    status: "Ongoing",
-    image: projectRiverside,
-  },
-  {
-    name: "Kyuna 39",
-    client: "Mucyo & Hope",
-    status: "Design",
-    image: projectHousing,
-  },
-  {
-    name: "Kigali Office Block Development",
-    client: "Mayfair Rwanda Ltd",
-    status: "Award",
-    image: projectOffice,
-  },
-  {
-    name: "Office Fitout Mayfair Centre",
-    client: "Mayfair Kenya Ltd",
-    status: "Ongoing",
-    image: projectMayfairFitout,
-  },
-  {
-    name: "School Lane Apartments",
-    client: "Panorama Ltd",
-    status: "Design",
-    image: projectSchoolLane,
-  },
-  {
-    name: "KDF Accommodation Housing — PPP & Affordable",
-    client: "CREC 10",
-    status: "Ongoing",
-    image: kdf1,
-    sites: [
-      { name: "Langata", image: kdfLangata },
-      { name: "Roysambu", image: kdfRoysambu },
-      { name: "Embakasi", image: kdfEmbakasi },
-      { name: "Kahawa", image: kdfKahawa },
-    ],
-  },
-  {
-    name: "Aeroclub Kitchen",
-    client: "Aeroclub EA",
-    status: "Design",
-    image: projectAeroclub,
-  },
-  {
-    name: "Kitchen & Ablution Block",
-    client: "Loreto Convent",
-    status: "Ongoing",
-    image: projectLoreto,
-  },
-  {
-    name: "Various Bank Fitouts (BoQ)",
-    client: "Prime Bank",
-    status: "Ongoing",
-    image: projectBankFitout,
-  },
-  {
-    name: "New Rehema House Fitout",
-    client: "NFDK",
-    status: "Ongoing",
-    image: projectRehema,
-  },
-  {
-    name: "Hacienda Michael",
-    client: "Njau Ngacha Family",
-    status: "Ongoing",
-    image: projectHacienda,
-  },
-  {
-    name: "Moran Hotel",
-    client: "Centcrete Ltd",
-    status: "Award",
-    image: projectMoran,
-  },
-  {
-    name: "Masalani Works",
-    client: "DMS",
-    status: "Ongoing",
-    image: projectMasalani,
-  },
+  { name: "Maisha Development", client: "Nirma Holdings Ltd", status: "Ongoing", image: projectTilisi },
+  { name: "Spring Valley Residential Development", client: "Rushmore Investment Ltd", status: "Ongoing", image: projectRiverside },
+  { name: "Kyuna 39", client: "Mucyo & Hope", status: "Design", image: projectHousing },
+  { name: "Kigali Office Block Development", client: "Mayfair Rwanda Ltd", status: "Award", image: projectOffice },
+  { name: "Office Fitout Mayfair Centre", client: "Mayfair Kenya Ltd", status: "Ongoing", image: projectMayfairFitout },
+  { name: "School Lane Apartments", client: "Panorama Ltd", status: "Design", image: projectSchoolLane },
+  { name: "KDF Accommodation Housing — PPP & Affordable", client: "CREC 10", status: "Ongoing", image: kdf1, isKdf: true },
+  { name: "Aeroclub Kitchen", client: "Aeroclub EA", status: "Design", image: projectAeroclub },
+  { name: "Kitchen & Ablution Block", client: "Loreto Convent", status: "Ongoing", image: projectLoreto },
+  { name: "Various Bank Fitouts (BoQ)", client: "Prime Bank", status: "Ongoing", image: projectBankFitout },
+  { name: "New Rehema House Fitout", client: "NFDK", status: "Ongoing", image: projectRehema },
+  { name: "Hacienda Michael", client: "Njau Ngacha Family", status: "Ongoing", image: projectHacienda },
+  { name: "Moran Hotel", client: "Centcrete Ltd", status: "Award", image: projectMoran },
+  { name: "Masalani Works", client: "DMS", status: "Ongoing", image: projectMasalani },
 ];
 
 const clients = [
@@ -160,7 +124,7 @@ const PortfolioPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((p, i) => (
               <ScrollReveal key={i} delay={(i % 3) * 0.1}>
-                <div className={`group overflow-hidden card-hover bg-card ${p.sites ? "md:col-span-2 lg:col-span-3" : ""}`}>
+                <div className={`group overflow-hidden card-hover bg-card ${p.isKdf ? "md:col-span-2 lg:col-span-3" : ""}`}>
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <img
                       src={p.image}
@@ -182,29 +146,12 @@ const PortfolioPage = () => {
                     <h3 className="text-base font-semibold tracking-tight mb-2">{p.name}</h3>
                     <p className="text-xs text-muted-foreground">{p.client}</p>
                   </div>
-                  {p.sites && (
-                    <div className="px-6 pb-6">
-                      <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold mb-4">Project Sites</p>
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {p.sites.map((site, j) => (
-                          <a key={j} href={site.image} target="_blank" rel="noopener noreferrer" className="group/site overflow-hidden cursor-pointer block">
-                            <div className="relative aspect-[16/10] overflow-hidden rounded-sm">
-                              <img
-                                src={site.image}
-                                alt={`KDF Housing — ${site.name}`}
-                                className="w-full h-full object-cover transition-transform duration-700 group-hover/site:scale-105"
-                                loading="lazy"
-                                width={400}
-                                height={250}
-                              />
-                              <div className="absolute inset-0 bg-navy/0 group-hover/site:bg-navy/30 transition-colors duration-300 flex items-center justify-center">
-                                <span className="text-primary-foreground text-xs font-semibold tracking-widest uppercase opacity-0 group-hover/site:opacity-100 transition-opacity duration-300">View</span>
-                              </div>
-                            </div>
-                            <p className="text-sm font-medium mt-2 text-center">{site.name}</p>
-                          </a>
-                        ))}
-                      </div>
+                  {p.isKdf && (
+                    <div className="px-6 pb-6 space-y-6">
+                      <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold">Project Sites</p>
+                      {kdfSites.map((site, j) => (
+                        <SiteGallery key={j} siteName={site.name} images={site.images} />
+                      ))}
                     </div>
                   )}
                 </div>
