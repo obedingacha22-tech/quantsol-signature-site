@@ -80,7 +80,7 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { name: "Maisha Development", client: "Nirma Holdings Ltd", status: "Ongoing", image: projectTilisi },
+  { name: "Maisha Development — Tilisi", client: "Nirma Holdings Ltd", status: "Ongoing", image: projectTilisi, isTilisi: true },
   { name: "Spring Valley Residential Development", client: "Rushmore Investment Ltd", status: "Ongoing", image: projectRiverside },
   { name: "Kyuna 39", client: "Mucyo & Hope", status: "Design", image: projectHousing },
   { name: "Kigali Office Block Development", client: "Mayfair Rwanda Ltd", status: "Award", image: projectOffice },
