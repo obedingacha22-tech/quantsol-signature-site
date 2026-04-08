@@ -20,6 +20,14 @@ import projectHacienda from "@/assets/project-hacienda.jpg";
 import projectMoran from "@/assets/project-moran.jpg";
 import projectMasalani from "@/assets/project-masalani.jpg";
 
+// Tilisi / Maisha Development photos
+import tilisi1 from "@/assets/tilisi-1.jpg";
+import tilisi2 from "@/assets/tilisi-2.jpg";
+import tilisi3 from "@/assets/tilisi-3.jpg";
+import tilisi4 from "@/assets/tilisi-4.jpg";
+import tilisi5 from "@/assets/tilisi-5.jpg";
+import tilisi6 from "@/assets/tilisi-6.jpg";
+
 // Roysambu photos
 import roysambu1 from "@/assets/roysambu-1.jpg";
 import roysambu2 from "@/assets/roysambu-2.jpg";
