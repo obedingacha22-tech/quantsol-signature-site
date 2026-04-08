@@ -20,6 +20,14 @@ import projectHacienda from "@/assets/project-hacienda.jpg";
 import projectMoran from "@/assets/project-moran.jpg";
 import projectMasalani from "@/assets/project-masalani.jpg";
 
+// Tilisi / Maisha Development photos
+import tilisi1 from "@/assets/tilisi-1.jpg";
+import tilisi2 from "@/assets/tilisi-2.jpg";
+import tilisi3 from "@/assets/tilisi-3.jpg";
+import tilisi4 from "@/assets/tilisi-4.jpg";
+import tilisi5 from "@/assets/tilisi-5.jpg";
+import tilisi6 from "@/assets/tilisi-6.jpg";
+
 // Roysambu photos
 import roysambu1 from "@/assets/roysambu-1.jpg";
 import roysambu2 from "@/assets/roysambu-2.jpg";
@@ -69,10 +77,11 @@ interface Project {
   status: string;
   image: string;
   isKdf?: boolean;
+  isTilisi?: boolean;
 }
 
 const projects: Project[] = [
-  { name: "Maisha Development", client: "Nirma Holdings Ltd", status: "Ongoing", image: projectTilisi },
+  { name: "Maisha Development — Tilisi", client: "Nirma Holdings Ltd", status: "Ongoing", image: projectTilisi, isTilisi: true },
   { name: "Spring Valley Residential Development", client: "Rushmore Investment Ltd", status: "Ongoing", image: projectRiverside },
   { name: "Kyuna 39", client: "Mucyo & Hope", status: "Design", image: projectHousing },
   { name: "Kigali Office Block Development", client: "Mayfair Rwanda Ltd", status: "Award", image: projectOffice },
@@ -124,7 +133,7 @@ const PortfolioPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((p, i) => (
               <ScrollReveal key={i} delay={(i % 3) * 0.1}>
-                <div className={`group overflow-hidden card-hover bg-card ${p.isKdf ? "md:col-span-2 lg:col-span-3" : ""}`}>
+                <div className={`group overflow-hidden card-hover bg-card ${(p.isKdf || p.isTilisi) ? "md:col-span-2 lg:col-span-3" : ""}`}>
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <img
                       src={p.image}
@@ -152,6 +161,12 @@ const PortfolioPage = () => {
                       {kdfSites.map((site, j) => (
                         <SiteGallery key={j} siteName={site.name} images={site.images} />
                       ))}
+                    </div>
+                  )}
+                  {p.isTilisi && (
+                    <div className="px-6 pb-6 space-y-6">
+                      <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold">Site Progress</p>
+                      <SiteGallery siteName="Tilisi" images={[tilisi1, tilisi2, tilisi3, tilisi4, tilisi5, tilisi6]} />
                     </div>
                   )}
                 </div>
