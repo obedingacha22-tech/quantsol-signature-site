@@ -77,6 +77,7 @@ interface Project {
   status: string;
   image: string;
   isKdf?: boolean;
+  isTilisi?: boolean;
 }
 
 const projects: Project[] = [
