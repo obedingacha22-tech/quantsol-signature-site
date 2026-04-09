@@ -27,6 +27,9 @@ import tilisi3 from "@/assets/tilisi-3.jpg";
 import tilisi4 from "@/assets/tilisi-4.jpg";
 import tilisi5 from "@/assets/tilisi-5.jpg";
 import tilisi6 from "@/assets/tilisi-6.jpg";
+import tilisi7 from "@/assets/tilisi-7.jpg";
+import tilisi8 from "@/assets/tilisi-8.jpg";
+import tilisi9 from "@/assets/tilisi-9.jpg";
 
 // Roysambu photos
 import roysambu1 from "@/assets/roysambu-1.jpg";
