@@ -51,6 +51,16 @@ import kahawa7 from "@/assets/kahawa-7.jpg";
 import kahawa8 from "@/assets/kahawa-8.jpg";
 import kahawa9 from "@/assets/kahawa-9.jpg";
 import kahawa10 from "@/assets/kahawa-10.jpg";
+import kahawa11 from "@/assets/kahawa-11.jpg";
+import kahawa12 from "@/assets/kahawa-12.jpg";
+import kahawa13 from "@/assets/kahawa-13.jpg";
+import kahawa14 from "@/assets/kahawa-14.jpg";
+import kahawa15 from "@/assets/kahawa-15.jpg";
+import kahawa16 from "@/assets/kahawa-16.jpg";
+import kahawa17 from "@/assets/kahawa-17.jpg";
+import kahawa18 from "@/assets/kahawa-18.jpg";
+import kahawa19 from "@/assets/kahawa-19.jpg";
+import kahawa20 from "@/assets/kahawa-20.jpg";
 
 // Embakasi photos
 import embakasi1 from "@/assets/embakasi-1.jpg";
@@ -68,7 +78,7 @@ const kdfSites = [
   { name: "Langata", images: [kdfLangata] },
   { name: "Roysambu", images: [roysambu1, roysambu2, roysambu3, roysambu4, roysambu5, roysambu6, roysambu7, roysambu8, roysambu9, roysambu10] },
   { name: "Embakasi", images: [embakasi1, embakasi2, embakasi3, embakasi4, embakasi5, embakasi6, embakasi7, embakasi8, embakasi9, embakasi10] },
-  { name: "Kahawa", images: [kahawa1, kahawa2, kahawa3, kahawa4, kahawa5, kahawa6, kahawa7, kahawa8, kahawa9, kahawa10] },
+  { name: "Kahawa", images: [kahawa1, kahawa2, kahawa3, kahawa4, kahawa5, kahawa6, kahawa7, kahawa8, kahawa9, kahawa10, kahawa11, kahawa12, kahawa13, kahawa14, kahawa15, kahawa16, kahawa17, kahawa18, kahawa19, kahawa20] },
 ];
 
 interface Project {
