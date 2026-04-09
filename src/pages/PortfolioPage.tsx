@@ -189,7 +189,7 @@ const PortfolioPage = () => {
                   {p.isTilisi && (
                     <div className="px-6 pb-6 space-y-6">
                       <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold">Site Progress</p>
-                      <SiteGallery siteName="Tilisi" images={[tilisi1, tilisi2, tilisi3, tilisi4, tilisi5, tilisi6]} />
+                      <SiteGallery siteName="Tilisi" images={[tilisi1, tilisi2, tilisi3, tilisi4, tilisi5, tilisi6, tilisi7, tilisi8, tilisi9]} />
                     </div>
                   )}
                 </div>
