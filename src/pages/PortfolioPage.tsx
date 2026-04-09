@@ -40,7 +40,16 @@ import roysambu8 from "@/assets/roysambu-8.jpg";
 import roysambu9 from "@/assets/roysambu-9.jpg";
 import roysambu10 from "@/assets/roysambu-10.jpg";
 
-// Kahawa photos
+// Roysambu Phase 2 photos
+import roysambuP21 from "@/assets/roysambu-p2-1.jpg";
+import roysambuP22 from "@/assets/roysambu-p2-2.jpg";
+import roysambuP23 from "@/assets/roysambu-p2-3.jpg";
+import roysambuP24 from "@/assets/roysambu-p2-4.jpg";
+import roysambuP25 from "@/assets/roysambu-p2-5.jpg";
+import roysambuP26 from "@/assets/roysambu-p2-6.jpg";
+import roysambuP27 from "@/assets/roysambu-p2-7.jpg";
+import roysambuP28 from "@/assets/roysambu-p2-8.jpg";
+
 import kahawa1 from "@/assets/kahawa-1.jpg";
 import kahawa2 from "@/assets/kahawa-2.jpg";
 import kahawa3 from "@/assets/kahawa-3.jpg";
@@ -76,7 +85,8 @@ import embakasi10 from "@/assets/embakasi-10.jpg";
 
 const kdfSites = [
   { name: "Langata", images: [kdfLangata] },
-  { name: "Roysambu", images: [roysambu1, roysambu2, roysambu3, roysambu4, roysambu5, roysambu6, roysambu7, roysambu8, roysambu9, roysambu10] },
+  { name: "Roysambu — Phase 1", images: [roysambu1, roysambu2, roysambu3, roysambu4, roysambu5, roysambu6, roysambu7, roysambu8, roysambu9, roysambu10] },
+  { name: "Roysambu — Phase 2", images: [roysambuP21, roysambuP22, roysambuP23, roysambuP24, roysambuP25, roysambuP26, roysambuP27, roysambuP28] },
   { name: "Embakasi", images: [embakasi1, embakasi2, embakasi3, embakasi4, embakasi5, embakasi6, embakasi7, embakasi8, embakasi9, embakasi10] },
   { name: "Kahawa", images: [kahawa1, kahawa2, kahawa3, kahawa4, kahawa5, kahawa6, kahawa7, kahawa8, kahawa9, kahawa10, kahawa11, kahawa12, kahawa13, kahawa14, kahawa15, kahawa16, kahawa17, kahawa18, kahawa19, kahawa20] },
 ];
