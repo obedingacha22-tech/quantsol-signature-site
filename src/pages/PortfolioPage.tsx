@@ -27,6 +27,9 @@ import tilisi3 from "@/assets/tilisi-3.jpg";
 import tilisi4 from "@/assets/tilisi-4.jpg";
 import tilisi5 from "@/assets/tilisi-5.jpg";
 import tilisi6 from "@/assets/tilisi-6.jpg";
+import tilisi7 from "@/assets/tilisi-7.jpg";
+import tilisi8 from "@/assets/tilisi-8.jpg";
+import tilisi9 from "@/assets/tilisi-9.jpg";
 
 // Roysambu photos
 import roysambu1 from "@/assets/roysambu-1.jpg";
@@ -186,7 +189,7 @@ const PortfolioPage = () => {
                   {p.isTilisi && (
                     <div className="px-6 pb-6 space-y-6">
                       <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold">Site Progress</p>
-                      <SiteGallery siteName="Tilisi" images={[tilisi1, tilisi2, tilisi3, tilisi4, tilisi5, tilisi6]} />
+                      <SiteGallery siteName="Tilisi" images={[tilisi1, tilisi2, tilisi3, tilisi4, tilisi5, tilisi6, tilisi7, tilisi8, tilisi9]} />
                     </div>
                   )}
                 </div>
