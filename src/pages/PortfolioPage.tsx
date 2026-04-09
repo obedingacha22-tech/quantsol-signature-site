@@ -86,7 +86,7 @@ import embakasi10 from "@/assets/embakasi-10.jpg";
 const kdfSites = [
   { name: "Langata", images: [kdfLangata] },
   { name: "Roysambu — Phase 1", images: [roysambu1, roysambu2, roysambu3, roysambu4, roysambu5, roysambu6, roysambu7, roysambu8, roysambu9, roysambu10] },
-  { name: "Roysambu — Phase 2", images: [roysambuP21, roysambuP22, roysambuP23, roysambuP24, roysambuP25, roysambuP26, roysambuP27, roysambuP28] },
+  { name: "Roysambu — Phase 2 (Ongoing)", images: [roysambuP21, roysambuP22, roysambuP23, roysambuP24, roysambuP25, roysambuP26, roysambuP27, roysambuP28] },
   { name: "Embakasi", images: [embakasi1, embakasi2, embakasi3, embakasi4, embakasi5, embakasi6, embakasi7, embakasi8, embakasi9, embakasi10] },
   { name: "Kahawa", images: [kahawa1, kahawa2, kahawa3, kahawa4, kahawa5, kahawa6, kahawa7, kahawa8, kahawa9, kahawa10, kahawa11, kahawa12, kahawa13, kahawa14, kahawa15, kahawa16, kahawa17, kahawa18, kahawa19, kahawa20] },
 ];
