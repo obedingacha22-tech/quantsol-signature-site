@@ -13,6 +13,7 @@ import ServicesPage from "@/pages/ServicesPage";
 import PortfolioPage from "@/pages/PortfolioPage";
 import TeamPage from "@/pages/TeamPage";
 import ContactPage from "@/pages/ContactPage";
+import PrivacyPage from "@/pages/PrivacyPage";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,17 +24,26 @@ const App = () => (
       <TooltipProvider>
         <Sonner />
         <BrowserRouter>
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-gold focus:text-primary-foreground focus:px-4 focus:py-2 focus:text-xs focus:font-semibold focus:tracking-widest focus:uppercase"
+          >
+            Skip to content
+          </a>
           <ScrollToTop />
           <Navbar />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/team" element={<TeamPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+          <div id="main-content">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/services" element={<ServicesPage />} />
+              <Route path="/portfolio" element={<PortfolioPage />} />
+              <Route path="/team" element={<TeamPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
           <Footer />
           <WhatsAppButton />
         </BrowserRouter>
