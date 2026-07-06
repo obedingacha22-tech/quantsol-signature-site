@@ -178,14 +178,6 @@ const PortfolioPage = () => {
                     <h3 className="text-base font-semibold tracking-tight mb-2">{p.name}</h3>
                     <p className="text-xs text-muted-foreground">{p.client}</p>
                   </div>
-                  {p.isKdf && (
-                    <div className="px-6 pb-6 space-y-6">
-                      <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold">Project Sites</p>
-                      {kdfSites.map((site, j) => (
-                        <SiteGallery key={j} siteName={site.name} images={site.images} />
-                      ))}
-                    </div>
-                  )}
                   {p.isTilisi && (
                     <div className="px-6 pb-6 space-y-6">
                       <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold">Site Progress</p>
