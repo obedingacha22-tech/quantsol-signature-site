@@ -382,8 +382,7 @@ const HomePage = () => {
                     "{t.quote}"
                   </p>
                   <div className="border-t border-border pt-4">
-                    <p className="text-sm font-semibold">{t.author}</p>
-                    <p className="text-xs text-accent">{t.role}</p>
+                    <p className="text-sm font-semibold text-accent">{t.company}</p>
                   </div>
                 </div>
               </ScrollReveal>
