@@ -51,7 +51,7 @@ const AboutPage = () => {
                 Quantsol Consultants Limited is a reputable consultancy firm specializing in Quantity Surveying, Project Management, and Facilities Management. The company is duly registered under the Companies Act and licensed in accordance with the Architects and Quantity Surveyors Act, Cap 525 of the Laws of Kenya.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With a team of three seasoned Directors, Quantsol brings together over a decade of professional experience in the construction and real estate sectors. Each Director holds a Bachelor's Degree in Quantity Surveying from the University of Nairobi and is a Registered Quantity Surveyor with the Board of Registration of Architects and Quantity Surveyors (BORAQS).
+                With a team of three seasoned Directors, Quantsol brings together over a decade of professional experience in the construction and real estate sectors. Each Director is a Registered Quantity Surveyor with the Board of Registration of Architects and Quantity Surveyors (BORAQS) and holds a Bachelor's Degree in Quantity Surveying.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Through innovation, professionalism, and attention to detail, the firm continues to provide value-driven services that ensure project success, cost efficiency, and long-term asset performance.
