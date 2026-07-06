@@ -156,7 +156,7 @@ const PortfolioPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((p, i) => (
               <ScrollReveal key={i} delay={(i % 3) * 0.1}>
-                <div className={`group overflow-hidden card-hover bg-card ${(p.isKdf || p.isTilisi) ? "md:col-span-2 lg:col-span-3" : ""}`}>
+                <div className={`group overflow-hidden card-hover bg-card ${p.isTilisi ? "md:col-span-2 lg:col-span-3" : ""}`}>
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <img
                       src={p.image}
