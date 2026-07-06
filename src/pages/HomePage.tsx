@@ -335,18 +335,27 @@ const HomePage = () => {
             {projects.map((p, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
                 <Link to="/portfolio" className="group relative block overflow-hidden aspect-[16/10]">
-                  <img
-                    src={p.image}
-                    alt={p.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                    width={800}
-                    height={600}
-                  />
-                  <div className="absolute inset-0 bg-navy/50 group-hover:bg-navy/70 transition-colors duration-500" />
+                  {p.restricted ? (
+                    <div className="w-full h-full bg-navy border border-gold/20" />
+                  ) : (
+                    <img
+                      src={p.image}
+                      alt={p.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width={800}
+                      height={600}
+                    />
+                  )}
+                  {!p.restricted && (
+                    <div className="absolute inset-0 bg-navy/50 group-hover:bg-navy/70 transition-colors duration-500" />
+                  )}
                   <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
                     <div className="flex items-center gap-3 mb-2">
                       <span className="text-xs font-mono tracking-widest text-gold">{p.status}</span>
+                      {p.restricted && (
+                        <span className="text-[10px] font-mono tracking-widest text-primary-foreground/50 uppercase">· Imagery Withheld</span>
+                      )}
                     </div>
                     <h3 className="text-lg md:text-xl font-semibold text-primary-foreground">{p.name}</h3>
                   </div>
