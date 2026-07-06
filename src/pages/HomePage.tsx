@@ -62,7 +62,7 @@ const whyUs = [
   {
     icon: Award,
     title: "Registered Experts",
-    desc: "BORAQS registered professionals with University of Nairobi qualifications.",
+    desc: "BORAQS-registered Quantity Surveyors with recognized academic and professional qualifications.",
   },
   {
     icon: Zap,
@@ -231,7 +231,7 @@ const HomePage = () => {
               Trusted Consultancy Partner in Kenya's Construction Industry
             </h2>
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground mb-8">
-              Quantsol Consultants Limited is a trusted consultancy firm delivering cost-effective, sustainable, and client-focused solutions from concept to completion. Registered under Kenyan law with BORAQS-certified directors from the University of Nairobi, we bring over a decade of expertise to every project.
+              Quantsol Consultants Limited is a trusted consultancy firm delivering cost-effective, sustainable, and client-focused solutions from concept to completion. Registered under Kenyan law with BORAQS-certified directors, we bring over a decade of expertise to every project.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

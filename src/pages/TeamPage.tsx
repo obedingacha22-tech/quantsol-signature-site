@@ -8,21 +8,21 @@ const directors = [
   {
     name: "QS Michael Ngacha",
     position: "Director",
-    qualifications: "Bachelor of Quantity Surveying (Honors), University of Nairobi",
+    qualifications: "Bachelor of Quantity Surveying (Honors)",
     registration: "BORAQS Registered (Q860)",
     extra: "Certificate in Basic Engineering Draughting",
   },
   {
     name: "QS Huria Karugu",
     position: "Director",
-    qualifications: "Bachelor of Quantity Surveying (Honors), University of Nairobi",
+    qualifications: "Bachelor of Quantity Surveying (Honors)",
     registration: "BORAQS Registered (Q840)",
     extra: "Diploma in Project Management",
   },
   {
     name: "QS Humphrey Ngechu",
     position: "Director",
-    qualifications: "Bachelor of Quantity Surveying (Honors), University of Nairobi",
+    qualifications: "Bachelor of Quantity Surveying (Honors)",
     registration: "BORAQS Registered (Q865)",
     extra: "CPA (K), PRINCE2 Foundation",
   },
@@ -73,7 +73,7 @@ const TeamPage = () => {
       {/* Directors */}
       <section className="section-padding">
         <div className="section-container">
-          <SectionHeader label="Leadership" title="Board of Directors" description="Each Director holds a Bachelor's Degree in Quantity Surveying from the University of Nairobi and is a Registered Quantity Surveyor with BORAQS." />
+          <SectionHeader label="Leadership" title="Board of Directors" description="Each Director is a BORAQS-registered Quantity Surveyor with a strong academic background in Quantity Surveying and proven project experience." />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {directors.map((d, i) => (
               <ScrollReveal key={i} delay={i * 0.15}>
