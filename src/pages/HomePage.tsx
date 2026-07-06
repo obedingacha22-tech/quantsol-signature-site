@@ -100,18 +100,15 @@ const trustBadges = [
 const testimonials = [
   {
     quote: "Quantsol's attention to detail in cost management saved us significant resources on our Tilisi development. Their professionalism is unmatched.",
-    author: "James Mwangi",
-    role: "Director, Nirma Holdings Ltd",
+    company: "Nirma Holdings Ltd",
   },
   {
     quote: "Working with Quantsol gave us complete confidence in our budget projections. Their team delivered precise BoQs and maintained excellent cost control throughout.",
-    author: "Sarah Odhiambo",
-    role: "Project Manager, Kopoa Developers",
+    company: "Kopoa Developers",
   },
   {
     quote: "Their project management expertise ensured our development stayed on schedule despite complex challenges. A truly reliable partner in construction.",
-    author: "David Kamau",
-    role: "CEO, Panorama Ltd",
+    company: "Panorama Ltd",
   },
 ];
 
