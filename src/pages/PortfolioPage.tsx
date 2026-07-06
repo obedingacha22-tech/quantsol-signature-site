@@ -158,14 +158,26 @@ const PortfolioPage = () => {
               <ScrollReveal key={i} delay={(i % 3) * 0.1}>
                 <div className={`group overflow-hidden card-hover bg-card ${p.isTilisi ? "md:col-span-2 lg:col-span-3" : ""}`}>
                   <div className="relative aspect-[16/10] overflow-hidden">
-                    <img
-                      src={p.image}
-                      alt={p.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      loading="lazy"
-                      width={800}
-                      height={600}
-                    />
+                    {p.isKdf ? (
+                      <div className="w-full h-full bg-navy flex items-center justify-center p-6 text-center">
+                        <div>
+                          <div className="gold-line mx-auto mb-4" />
+                          <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-gold mb-2">Restricted Project</p>
+                          <p className="text-xs text-primary-foreground/60 max-w-xs">
+                            Site imagery withheld due to the sensitive nature of this engagement.
+                          </p>
+                        </div>
+                      </div>
+                    ) : (
+                      <img
+                        src={p.image}
+                        alt={p.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                        width={800}
+                        height={600}
+                      />
+                    )}
                     <div className="absolute top-4 right-4">
                       <span className={`text-xs font-mono tracking-wider px-3 py-1 ${
                         p.status === "Complete" ? "bg-accent/90 text-primary-foreground" : "bg-navy/80 text-primary-foreground"
