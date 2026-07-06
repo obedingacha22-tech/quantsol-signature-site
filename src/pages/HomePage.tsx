@@ -77,7 +77,7 @@ const whyUs = [
 ];
 
 const projects = [
-  { name: "KDF Housing Project — PPP & Affordable", status: "Ongoing", image: kdf1 },
+  { name: "KDF Housing Project — PPP & Affordable", status: "Ongoing", image: kdf1, restricted: true },
   { name: "Maisha Development", status: "Ongoing", image: projectTilisi },
   { name: "Spring Valley Residential", status: "Ongoing", image: projectRiverside },
   { name: "Kigali Office Block", status: "Award Stage", image: projectHousing },
