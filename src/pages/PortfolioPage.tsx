@@ -156,16 +156,28 @@ const PortfolioPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((p, i) => (
               <ScrollReveal key={i} delay={(i % 3) * 0.1}>
-                <div className={`group overflow-hidden card-hover bg-card ${(p.isKdf || p.isTilisi) ? "md:col-span-2 lg:col-span-3" : ""}`}>
+                <div className={`group overflow-hidden card-hover bg-card ${p.isTilisi ? "md:col-span-2 lg:col-span-3" : ""}`}>
                   <div className="relative aspect-[16/10] overflow-hidden">
-                    <img
-                      src={p.image}
-                      alt={p.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      loading="lazy"
-                      width={800}
-                      height={600}
-                    />
+                    {p.isKdf ? (
+                      <div className="w-full h-full bg-navy flex items-center justify-center p-6 text-center">
+                        <div>
+                          <div className="gold-line mx-auto mb-4" />
+                          <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-gold mb-2">Restricted Project</p>
+                          <p className="text-xs text-primary-foreground/60 max-w-xs">
+                            Site imagery withheld due to the sensitive nature of this engagement.
+                          </p>
+                        </div>
+                      </div>
+                    ) : (
+                      <img
+                        src={p.image}
+                        alt={p.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
+                        width={800}
+                        height={600}
+                      />
+                    )}
                     <div className="absolute top-4 right-4">
                       <span className={`text-xs font-mono tracking-wider px-3 py-1 ${
                         p.status === "Complete" ? "bg-accent/90 text-primary-foreground" : "bg-navy/80 text-primary-foreground"
@@ -178,14 +190,6 @@ const PortfolioPage = () => {
                     <h3 className="text-base font-semibold tracking-tight mb-2">{p.name}</h3>
                     <p className="text-xs text-muted-foreground">{p.client}</p>
                   </div>
-                  {p.isKdf && (
-                    <div className="px-6 pb-6 space-y-6">
-                      <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold">Project Sites</p>
-                      {kdfSites.map((site, j) => (
-                        <SiteGallery key={j} siteName={site.name} images={site.images} />
-                      ))}
-                    </div>
-                  )}
                   {p.isTilisi && (
                     <div className="px-6 pb-6 space-y-6">
                       <p className="text-xs font-semibold tracking-[0.15em] uppercase text-gold">Site Progress</p>

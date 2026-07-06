@@ -77,7 +77,7 @@ const whyUs = [
 ];
 
 const projects = [
-  { name: "KDF Housing Project — PPP & Affordable", status: "Ongoing", image: kdf1 },
+  { name: "KDF Housing Project — PPP & Affordable", status: "Ongoing", image: kdf1, restricted: true },
   { name: "Maisha Development", status: "Ongoing", image: projectTilisi },
   { name: "Spring Valley Residential", status: "Ongoing", image: projectRiverside },
   { name: "Kigali Office Block", status: "Award Stage", image: projectHousing },
@@ -100,18 +100,15 @@ const trustBadges = [
 const testimonials = [
   {
     quote: "Quantsol's attention to detail in cost management saved us significant resources on our Tilisi development. Their professionalism is unmatched.",
-    author: "James Mwangi",
-    role: "Director, Nirma Holdings Ltd",
+    company: "Nirma Holdings Ltd",
   },
   {
     quote: "Working with Quantsol gave us complete confidence in our budget projections. Their team delivered precise BoQs and maintained excellent cost control throughout.",
-    author: "Sarah Odhiambo",
-    role: "Project Manager, Kopoa Developers",
+    company: "Kopoa Developers",
   },
   {
     quote: "Their project management expertise ensured our development stayed on schedule despite complex challenges. A truly reliable partner in construction.",
-    author: "David Kamau",
-    role: "CEO, Panorama Ltd",
+    company: "Panorama Ltd",
   },
 ];
 
@@ -338,18 +335,27 @@ const HomePage = () => {
             {projects.map((p, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
                 <Link to="/portfolio" className="group relative block overflow-hidden aspect-[16/10]">
-                  <img
-                    src={p.image}
-                    alt={p.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                    width={800}
-                    height={600}
-                  />
-                  <div className="absolute inset-0 bg-navy/50 group-hover:bg-navy/70 transition-colors duration-500" />
+                  {p.restricted ? (
+                    <div className="w-full h-full bg-navy border border-gold/20" />
+                  ) : (
+                    <img
+                      src={p.image}
+                      alt={p.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width={800}
+                      height={600}
+                    />
+                  )}
+                  {!p.restricted && (
+                    <div className="absolute inset-0 bg-navy/50 group-hover:bg-navy/70 transition-colors duration-500" />
+                  )}
                   <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
                     <div className="flex items-center gap-3 mb-2">
                       <span className="text-xs font-mono tracking-widest text-gold">{p.status}</span>
+                      {p.restricted && (
+                        <span className="text-[10px] font-mono tracking-widest text-primary-foreground/50 uppercase">· Imagery Withheld</span>
+                      )}
                     </div>
                     <h3 className="text-lg md:text-xl font-semibold text-primary-foreground">{p.name}</h3>
                   </div>
@@ -385,8 +391,7 @@ const HomePage = () => {
                     "{t.quote}"
                   </p>
                   <div className="border-t border-border pt-4">
-                    <p className="text-sm font-semibold">{t.author}</p>
-                    <p className="text-xs text-accent">{t.role}</p>
+                    <p className="text-sm font-semibold text-accent">{t.company}</p>
                   </div>
                 </div>
               </ScrollReveal>

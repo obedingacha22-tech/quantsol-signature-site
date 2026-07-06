@@ -13,6 +13,7 @@ import ServicesPage from "@/pages/ServicesPage";
 import PortfolioPage from "@/pages/PortfolioPage";
 import TeamPage from "@/pages/TeamPage";
 import ContactPage from "@/pages/ContactPage";
+import InsightsPage from "@/pages/InsightsPage";
 import PrivacyPage from "@/pages/PrivacyPage";
 import NotFound from "@/pages/NotFound";
 
@@ -40,6 +41,7 @@ const App = () => (
               <Route path="/portfolio" element={<PortfolioPage />} />
               <Route path="/team" element={<TeamPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/insights" element={<InsightsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
