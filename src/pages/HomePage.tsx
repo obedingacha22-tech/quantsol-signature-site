@@ -13,7 +13,7 @@ import HeroSlideshow from "@/components/HeroSlideshow";
 import heroImg from "@/assets/hero-building.jpg";
 import projectHousing from "@/assets/project-housing.jpg";
 import projectRiverside from "@/assets/project-riverside.jpg";
-import kdf1 from "@/assets/kdf-1.jpg";
+
 import projectTilisi from "@/assets/project-tilisi.jpg";
 import bgBoqReview from "@/assets/bg-boq-review.jpg";
 import bgDigitalEstimation from "@/assets/bg-digital-estimation.jpg";
@@ -77,7 +77,7 @@ const whyUs = [
 ];
 
 const projects = [
-  { name: "KDF Housing Project — PPP & Affordable", status: "Ongoing", image: kdf1, restricted: true },
+  { name: "KDF Housing Project — PPP & Affordable", status: "Ongoing", image: "/placeholder.svg", restricted: true },
   { name: "Maisha Development", status: "Ongoing", image: projectTilisi },
   { name: "Spring Valley Residential", status: "Ongoing", image: projectRiverside },
   { name: "Kigali Office Block", status: "Award Stage", image: projectHousing },
