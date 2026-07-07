@@ -122,18 +122,18 @@ const ContactPage = () => {
                       <MapPin size={20} className="text-accent" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold mb-1">Location</h4>
-                      <p className="text-sm text-muted-foreground">Sigona Suites 502B, Kikuyu</p>
-                      <p className="text-sm text-muted-foreground">Kikuyu Nderi Road, Kikuyu Town</p>
-                      <p className="text-sm text-muted-foreground">P.O. BOX 755 - 00517, Uhuru Gardens</p>
+                      <h4 className="text-sm font-semibold mb-4">Location</h4>
+                      <p className="text-sm text-muted-foreground leading-relaxed">Sigona Suites 502B, Kikuyu</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">Kikuyu Nderi Road, Kikuyu Town</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">P.O. BOX 755 - 00517, Uhuru Gardens</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-accent/10 flex items-center justify-center flex-shrink-0">
                       <Phone size={20} className="text-accent" />
                     </div>
-                    <div>
-                      <h4 className="text-sm font-semibold mb-1">Phone</h4>
+                    <div className="flex flex-col gap-1.5">
+                      <h4 className="text-sm font-semibold mb-4">Phone</h4>
                       <a href="tel:0798770275" className="text-sm text-muted-foreground hover:text-accent transition-colors block">0798 770 275</a>
                       <a href="tel:0712504467" className="text-sm text-muted-foreground hover:text-accent transition-colors block">0712 504 467</a>
                       <a href="tel:0711201331" className="text-sm text-muted-foreground hover:text-accent transition-colors block">0711 201 331</a>
@@ -144,7 +144,7 @@ const ContactPage = () => {
                       <Mail size={20} className="text-accent" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold mb-1">Email</h4>
+                      <h4 className="text-sm font-semibold mb-4">Email</h4>
                       <a href="mailto:info@quantsol.co.ke" className="text-sm text-muted-foreground hover:text-accent transition-colors">info@quantsol.co.ke</a>
                     </div>
                   </div>
