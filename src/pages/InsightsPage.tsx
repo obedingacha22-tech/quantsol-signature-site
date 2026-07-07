@@ -959,38 +959,38 @@ const InsightsPage = () => {
           description={selected.metaDescription}
           path="/insights"
         />
-        <article className="pt-32 pb-20">
+        <article className="pt-32 md:pt-40 pb-24 md:pb-32">
           <div className="section-container max-w-3xl">
             <button
               onClick={() => { setSelected(null); window.scrollTo(0, 0); }}
-              className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-gold hover:text-accent transition-colors mb-8"
+              className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-gold hover:text-accent transition-colors mb-16 md:mb-20"
             >
               <ArrowLeft size={14} /> Back to Insights
             </button>
-            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-gold">{selected.category}</span>
-            <div className="gold-line mt-4 mb-6" />
-            <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-balance mb-6">
+            <span className="text-xs font-semibold tracking-[0.2em] uppercase text-gold block">{selected.category}</span>
+            <div className="gold-line mt-6 mb-8" />
+            <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-balance mb-8 md:mb-10 leading-[1.15]">
               {selected.title}
             </h1>
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-muted-foreground mb-10">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-muted-foreground mb-12 md:mb-16">
               <span className="inline-flex items-center gap-2"><User size={12} /> {selected.author}</span>
               <span className="inline-flex items-center gap-2"><Calendar size={12} /> {selected.date}</span>
               <span className="inline-flex items-center gap-2"><Clock size={12} /> {selected.readTime}</span>
             </div>
-            <div className="relative aspect-[16/9] overflow-hidden mb-10">
+            <div className="relative aspect-[16/9] overflow-hidden mb-14 md:mb-16">
               <img src={selected.image} alt={selected.title} className="w-full h-full object-cover" />
             </div>
-            <div className="space-y-8">
+            <div className="space-y-12 md:space-y-14">
               {selected.sections.map((section, i) => (
                 <div key={i}>
                   {section.heading && (
-                    <h2 className="text-xl md:text-2xl font-semibold tracking-tight mt-4 mb-4">
+                    <h2 className="text-xl md:text-2xl font-semibold tracking-tight mb-6 leading-snug">
                       {section.heading}
                     </h2>
                   )}
-                  <div className="space-y-5">
+                  <div className="space-y-6 md:space-y-7">
                     {section.paragraphs.map((p, j) => (
-                      <p key={j} className="text-base md:text-lg leading-relaxed text-foreground/85">
+                      <p key={j} className="text-base md:text-lg leading-[1.8] text-foreground/85">
                         {p}
                       </p>
                     ))}
@@ -1000,9 +1000,9 @@ const InsightsPage = () => {
             </div>
 
             {/* Internal links */}
-            <div className="mt-14 p-6 bg-surface border-l-2 border-gold">
-              <p className="text-xs font-semibold tracking-widest uppercase text-gold mb-3">Related Pages</p>
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            <div className="mt-20 md:mt-24 p-8 md:p-10 bg-surface border-l-2 border-gold">
+              <p className="text-xs font-semibold tracking-widest uppercase text-gold mb-5">Related Pages</p>
+              <div className="flex flex-wrap gap-x-8 gap-y-3 text-sm">
                 <Link to="/services" className="text-foreground hover:text-accent transition-colors">Our Services</Link>
                 <Link to="/portfolio" className="text-foreground hover:text-accent transition-colors">Project Portfolio</Link>
                 <Link to="/about" className="text-foreground hover:text-accent transition-colors">About Quantsol</Link>
@@ -1010,10 +1010,10 @@ const InsightsPage = () => {
               </div>
             </div>
 
-            <div className="mt-10 pt-8 border-t border-border">
+            <div className="mt-16 md:mt-20 pt-10 md:pt-12 border-t border-border">
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-8 py-3 text-xs font-semibold tracking-widest uppercase hover:bg-accent/90 transition-colors"
+                className="inline-flex items-center gap-2 bg-gold text-primary-foreground px-8 py-4 text-xs font-semibold tracking-widest uppercase hover:bg-accent/90 transition-colors"
               >
                 Discuss Your Project <ArrowRight size={14} />
               </Link>
@@ -1021,19 +1021,19 @@ const InsightsPage = () => {
 
             {/* Related articles */}
             {relatedList.length > 0 && (
-              <div className="mt-16">
-                <h3 className="text-sm font-semibold tracking-widest uppercase text-gold mb-6">Keep Reading</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="mt-20 md:mt-24">
+                <h3 className="text-sm font-semibold tracking-widest uppercase text-gold mb-8">Keep Reading</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {relatedList.map((r) => (
                     <button
                       key={r.slug}
                       onClick={() => { setSelected(r); window.scrollTo(0, 0); }}
                       className="text-left group"
                     >
-                      <div className="aspect-[16/10] overflow-hidden mb-3">
+                      <div className="aspect-[16/10] overflow-hidden mb-4">
                         <img src={r.image} alt={r.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
                       </div>
-                      <p className="text-[10px] font-mono tracking-widest text-accent uppercase mb-2">{r.category}</p>
+                      <p className="text-[10px] font-mono tracking-widest text-accent uppercase mb-3">{r.category}</p>
                       <h4 className="text-sm font-semibold leading-snug group-hover:text-accent transition-colors">{r.title}</h4>
                     </button>
                   ))}
@@ -1045,6 +1045,7 @@ const InsightsPage = () => {
       </main>
     );
   }
+
 
   return (
     <main>

@@ -47,11 +47,11 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xs font-semibold tracking-widest uppercase text-gold mb-6">Contact</h4>
-            <div className="flex flex-col gap-4">
+            <h4 className="text-xs font-semibold tracking-widest uppercase text-gold mb-8">Contact</h4>
+            <div className="flex flex-col gap-5">
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="text-gold mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-primary-foreground/60">Sigona Suites 502B, Kikuyu, Kenya</span>
+                <span className="text-sm text-primary-foreground/60 leading-relaxed">Sigona Suites 502B, Kikuyu, Kenya</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-gold flex-shrink-0" />
