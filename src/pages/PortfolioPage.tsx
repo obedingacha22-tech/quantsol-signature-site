@@ -8,17 +8,13 @@ import projectHousing from "@/assets/project-housing.jpg";
 import projectRiverside from "@/assets/project-riverside.jpg";
 import projectTilisi from "@/assets/project-tilisi.jpg";
 import projectOffice from "@/assets/project-office.jpg";
-import kdf1 from "@/assets/kdf-1.jpg";
-import kdfLangata from "@/assets/kdf-langata.jpg";
 import projectMayfairFitout from "@/assets/project-mayfair-fitout.jpg";
 import projectSchoolLane from "@/assets/project-school-lane.jpg";
 import projectAeroclub from "@/assets/project-aeroclub.jpg";
 import projectLoreto from "@/assets/project-loreto.jpg";
 import projectBankFitout from "@/assets/project-bank-fitout.jpg";
-import projectRehema from "@/assets/project-rehema.jpg";
 import projectHacienda from "@/assets/project-hacienda.jpg";
 import projectMoran from "@/assets/project-moran.jpg";
-import projectMasalani from "@/assets/project-masalani.jpg";
 
 // Tilisi / Maisha Development photos
 import tilisi1 from "@/assets/tilisi-1.jpg";
@@ -30,69 +26,6 @@ import tilisi6 from "@/assets/tilisi-6.jpg";
 import tilisi7 from "@/assets/tilisi-7.jpg";
 import tilisi8 from "@/assets/tilisi-8.jpg";
 import tilisi9 from "@/assets/tilisi-9.jpg";
-
-// Roysambu photos
-import roysambu1 from "@/assets/roysambu-1.jpg";
-import roysambu2 from "@/assets/roysambu-2.jpg";
-import roysambu3 from "@/assets/roysambu-3.jpg";
-import roysambu4 from "@/assets/roysambu-4.jpg";
-import roysambu5 from "@/assets/roysambu-5.jpg";
-import roysambu6 from "@/assets/roysambu-6.jpg";
-import roysambu7 from "@/assets/roysambu-7.jpg";
-import roysambu8 from "@/assets/roysambu-8.jpg";
-import roysambu9 from "@/assets/roysambu-9.jpg";
-import roysambu10 from "@/assets/roysambu-10.jpg";
-
-// Roysambu Phase 2 photos
-import roysambuP21 from "@/assets/roysambu-p2-1.jpg";
-import roysambuP22 from "@/assets/roysambu-p2-2.jpg";
-import roysambuP23 from "@/assets/roysambu-p2-3.jpg";
-import roysambuP24 from "@/assets/roysambu-p2-4.jpg";
-import roysambuP25 from "@/assets/roysambu-p2-5.jpg";
-import roysambuP26 from "@/assets/roysambu-p2-6.jpg";
-import roysambuP27 from "@/assets/roysambu-p2-7.jpg";
-import roysambuP28 from "@/assets/roysambu-p2-8.jpg";
-
-import kahawa1 from "@/assets/kahawa-1.jpg";
-import kahawa2 from "@/assets/kahawa-2.jpg";
-import kahawa3 from "@/assets/kahawa-3.jpg";
-import kahawa4 from "@/assets/kahawa-4.jpg";
-import kahawa5 from "@/assets/kahawa-5.jpg";
-import kahawa6 from "@/assets/kahawa-6.jpg";
-import kahawa7 from "@/assets/kahawa-7.jpg";
-import kahawa8 from "@/assets/kahawa-8.jpg";
-import kahawa9 from "@/assets/kahawa-9.jpg";
-import kahawa10 from "@/assets/kahawa-10.jpg";
-import kahawa11 from "@/assets/kahawa-11.jpg";
-import kahawa12 from "@/assets/kahawa-12.jpg";
-import kahawa13 from "@/assets/kahawa-13.jpg";
-import kahawa14 from "@/assets/kahawa-14.jpg";
-import kahawa15 from "@/assets/kahawa-15.jpg";
-import kahawa16 from "@/assets/kahawa-16.jpg";
-import kahawa17 from "@/assets/kahawa-17.jpg";
-import kahawa18 from "@/assets/kahawa-18.jpg";
-import kahawa19 from "@/assets/kahawa-19.jpg";
-import kahawa20 from "@/assets/kahawa-20.jpg";
-
-// Embakasi photos
-import embakasi1 from "@/assets/embakasi-1.jpg";
-import embakasi2 from "@/assets/embakasi-2.jpg";
-import embakasi3 from "@/assets/embakasi-3.jpg";
-import embakasi4 from "@/assets/embakasi-4.jpg";
-import embakasi5 from "@/assets/embakasi-5.jpg";
-import embakasi6 from "@/assets/embakasi-6.jpg";
-import embakasi7 from "@/assets/embakasi-7.jpg";
-import embakasi8 from "@/assets/embakasi-8.jpg";
-import embakasi9 from "@/assets/embakasi-9.jpg";
-import embakasi10 from "@/assets/embakasi-10.jpg";
-
-const kdfSites = [
-  { name: "Langata", images: [kdfLangata] },
-  { name: "Roysambu — Phase 1", images: [roysambu1, roysambu2, roysambu3, roysambu4, roysambu5, roysambu6, roysambu7, roysambu8, roysambu9, roysambu10] },
-  { name: "Roysambu — Phase 2 (Ongoing)", images: [roysambuP21, roysambuP22, roysambuP23, roysambuP24, roysambuP25, roysambuP26, roysambuP27, roysambuP28] },
-  { name: "Embakasi", images: [embakasi1, embakasi2, embakasi3, embakasi4, embakasi5, embakasi6, embakasi7, embakasi8, embakasi9, embakasi10] },
-  { name: "Kahawa", images: [kahawa1, kahawa2, kahawa3, kahawa4, kahawa5, kahawa6, kahawa7, kahawa8, kahawa9, kahawa10, kahawa11, kahawa12, kahawa13, kahawa14, kahawa15, kahawa16, kahawa17, kahawa18, kahawa19, kahawa20] },
-];
 
 interface Project {
   name: string;
