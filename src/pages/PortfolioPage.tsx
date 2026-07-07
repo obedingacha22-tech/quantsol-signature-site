@@ -43,14 +43,14 @@ const projects: Project[] = [
   { name: "Kigali Office Block Development", client: "Mayfair Rwanda Ltd", status: "Award", image: projectOffice },
   { name: "Office Fitout Mayfair Centre", client: "Mayfair Kenya Ltd", status: "Ongoing", image: projectMayfairFitout },
   { name: "School Lane Apartments", client: "Panorama Ltd", status: "Design", image: projectSchoolLane },
-  { name: "KDF Accommodation Housing — PPP & Affordable", client: "CREC 10", status: "Ongoing", image: kdf1, isRestricted: true },
+  { name: "KDF Accommodation Housing — PPP & Affordable", client: "CREC 10", status: "Ongoing", image: "/placeholder.svg", isRestricted: true },
   { name: "Aeroclub Kitchen", client: "Aeroclub EA", status: "Design", image: projectAeroclub },
   { name: "Kitchen & Ablution Block", client: "Loreto Convent", status: "Ongoing", image: projectLoreto },
   { name: "Various Bank Fitouts (BoQ)", client: "Prime Bank", status: "Ongoing", image: projectBankFitout },
-  { name: "New Rehema House Fitout", client: "NFDK", status: "Ongoing", image: projectRehema, isRestricted: true },
+  { name: "New Rehema House Fitout", client: "NFDK", status: "Ongoing", image: "/placeholder.svg", isRestricted: true },
   { name: "Hacienda Michael", client: "Njau Ngacha Family", status: "Ongoing", image: projectHacienda },
   { name: "Moran Hotel", client: "Centcrete Ltd", status: "Award", image: projectMoran },
-  { name: "Masalani Works", client: "DMS", status: "Ongoing", image: projectMasalani, isRestricted: true },
+  { name: "Masalani Works", client: "DMS", status: "Ongoing", image: "/placeholder.svg", isRestricted: true },
 ];
 
 const clients = [
