@@ -48,13 +48,13 @@ const AboutPage = () => {
               <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-4 block">Company Overview</span>
               <div className="gold-line mb-6" />
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Quantsol Consultants Limited is a reputable consultancy firm specializing in Quantity Surveying, Project Management, and Facilities Management. The company is duly registered under the Companies Act and licensed in accordance with the Architects and Quantity Surveyors Act, Cap 525 of the Laws of Kenya.
+                Quantsol Consultants Limited is a Nairobi-based consultancy working in quantity surveying, project management and facilities management. We're registered under the Companies Act and licensed under the Architects and Quantity Surveyors Act, Cap 525, and every one of our directors is registered with BORAQS.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With a team of three seasoned Directors, Quantsol brings together over a decade of professional experience in the construction and real estate sectors. Each Director is a Registered Quantity Surveyor with the Board of Registration of Architects and Quantity Surveyors (BORAQS) and holds a Bachelor's Degree in Quantity Surveying.
+                The firm is led by three directors, each with a Bachelor's Degree in Quantity Surveying and over a decade of practice on Kenyan and regional projects. That experience runs across residential and commercial developments, public housing, institutional work and fitouts. It's the kind of range that means we've usually seen your problem before.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Through innovation, professionalism, and attention to detail, the firm continues to provide value-driven services that ensure project success, cost efficiency, and long-term asset performance.
+                Our approach is straightforward. We keep the reporting honest, we price risk before it becomes cost, and we leave every client with a project file that would stand up to scrutiny by an auditor or a court. That's what we mean when we say value-driven work.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
@@ -76,7 +76,7 @@ const AboutPage = () => {
                 <Eye className="w-8 h-8 text-accent mb-4" />
                 <h3 className="text-2xl font-bold tracking-tight mb-4">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To set new benchmarks of excellence in every project we undertake by consistently exceeding client expectations through high-quality, timely, and cost-effective solutions.
+                  To set the benchmark for excellence on every project we're trusted with, by consistently doing what we said we'd do, on time and inside the budget.
                 </p>
               </div>
             </ScrollReveal>
@@ -85,7 +85,7 @@ const AboutPage = () => {
                 <Target className="w-8 h-8 text-accent mb-4" />
                 <h3 className="text-2xl font-bold tracking-tight mb-4">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To build lasting relationships with organizations seeking professional cost and project management solutions by continuously enhancing our capabilities through comprehensive Quantity Surveying services, cost consultancy, innovative methodology, and technically sound practices.
+                  To build long-term relationships with clients who care about how their projects are run, by offering technically sound cost and project management advice that stands up to scrutiny.
                 </p>
               </div>
             </ScrollReveal>

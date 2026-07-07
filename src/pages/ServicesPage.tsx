@@ -58,8 +58,8 @@ const ServicesPage = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-primary-foreground max-w-3xl">
               Comprehensive Consultancy Solutions
             </h1>
-            <p className="text-primary-foreground/60 text-lg mt-6 max-w-2xl">
-              From concept to completion and beyond — we provide integrated services that protect your investment and maximize value.
+            <p className="text-primary-foreground/70 text-lg mt-6 max-w-2xl leading-relaxed">
+              Three connected practices covering the full life of a building, from the earliest cost decisions right through to how the finished asset is run day to day.
             </p>
           </ScrollReveal>
         </div>
@@ -78,10 +78,10 @@ const ServicesPage = () => {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Quantity Surveying is the discipline of managing all costs and contractual aspects of construction projects from inception to completion and beyond. As our principal service, QS ensures that projects are accurately priced, procured competitively, delivered within budget, and closed with transparent final accounts.
+                Quantity surveying is the discipline that manages every cost and contractual decision on a construction project, from the earliest feasibility numbers right through to the closing of the final account. It's our principal service, and it's how we protect the budget from the pressures that pull most projects off course.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                QS combines technical measurement, commercial acumen, procurement knowledge and contract administration to protect client investment and maximize value for money.
+                The work combines measurement, market knowledge, procurement discipline and contract administration. Done properly, it turns cost from something that happens to you into something you can actually see coming.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.15}>
@@ -116,10 +116,10 @@ const ServicesPage = () => {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Providing end-to-end management and coordination of construction and development projects to ensure they are delivered on time, within budget, and to the desired quality standards. We take a holistic and results-driven approach to project delivery.
+                We manage construction and development projects on the client's behalf, running the design team, the contractor and the wider stakeholder group so that programme, cost and quality all land where they were meant to.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Our project managers act as the client's trusted representatives — aligning objectives, managing resources efficiently, and proactively resolving issues before they escalate.
+                Our project managers act as your representative on site. We align objectives at the start, resolve issues before they escalate, and give you a monthly report that tells you exactly where the project stands.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.15} className="lg:order-1">
@@ -154,10 +154,10 @@ const ServicesPage = () => {
                 </div>
               </div>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Focused on ensuring that buildings and infrastructure continue to operate efficiently, safely, and sustainably throughout their lifecycle. We provide strategic and operational management of physical assets, integrating people, processes, and technology.
+                Facilities management is the work that keeps a building performing after the contractor has gone home. We handle the strategic and operational side of managing physical assets, bringing together people, planned maintenance and reporting into one coordinated service.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Our goal is to help clients maximize asset value, reduce operational costs, and create well-maintained, productive spaces that support business continuity.
+                The aim is straightforward. Extend the asset's useful life, keep operating costs predictable, and give the owner or occupier a building that supports their business rather than getting in the way of it.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.15}>
