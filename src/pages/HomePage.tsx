@@ -24,21 +24,21 @@ const services = [
     icon: Calculator,
     num: "01",
     title: "Quantity Surveying",
-    desc: "Comprehensive cost management from feasibility through to final account — ensuring projects are delivered within budget with full financial transparency.",
+    desc: "Cost management from the first feasibility conversation through to the final account, so your project stays inside its budget with a clear paper trail behind every shilling.",
     highlights: ["Cost Estimation & BoQ", "Tendering & Procurement", "Contract Administration"],
   },
   {
     icon: ClipboardList,
     num: "02",
     title: "Project Management",
-    desc: "End-to-end project coordination, planning, and delivery ensuring timely completion to the desired quality standards.",
+    desc: "Hands-on coordination of design, procurement and construction, keeping the programme honest and the quality where you agreed it would be.",
     highlights: ["Full Project Coordination", "Risk & Cost Management", "Timeline Control"],
   },
   {
     icon: Building2,
     num: "03",
     title: "Facilities Management",
-    desc: "Strategic and operational management of physical assets to maximize value, reduce costs, and ensure sustainability.",
+    desc: "Strategic and day-to-day management of buildings after handover, so the asset you built continues to earn its keep for years to come.",
     highlights: ["Maintenance Planning", "Asset Management", "Sustainability Systems"],
   },
 ];
@@ -47,32 +47,32 @@ const whyUs = [
   {
     icon: ShieldCheck,
     title: "Cost Certainty",
-    desc: "Avoid budget overruns with precise cost management and forecasting at every project stage.",
+    desc: "Realistic budgets at concept stage, monthly reporting during construction, and no surprises at final account.",
   },
   {
     icon: Target,
     title: "Risk Reduction",
-    desc: "Early issue detection and proactive management to keep your project on track.",
+    desc: "We spot the issues that tend to cause disputes and price them out of the project before they cause damage.",
   },
   {
     icon: Eye,
     title: "Full Transparency",
-    desc: "Clear reporting and open communication so you always know where your project stands.",
+    desc: "Clear monthly reports written in language you can actually read, with the assumptions behind every number.",
   },
   {
     icon: Award,
     title: "Registered Experts",
-    desc: "BORAQS-registered Quantity Surveyors with recognized academic and professional qualifications.",
+    desc: "Three BORAQS-registered directors and a team with a decade of practice on Kenyan and East African projects.",
   },
   {
     icon: Zap,
     title: "On-Time Delivery",
-    desc: "Efficient processes that ensure your project is completed on schedule.",
+    desc: "Live programmes updated weekly on site, so slippage is caught in days rather than at the end of the month.",
   },
   {
     icon: BarChart3,
     title: "Proven Results",
-    desc: "Multi-billion shilling portfolio across residential, commercial, and government projects.",
+    desc: "A portfolio of over Ksh 30 billion in value, spanning residential, commercial, institutional and public housing.",
   },
 ];
 
@@ -99,15 +99,15 @@ const trustBadges = [
 
 const testimonials = [
   {
-    quote: "Quantsol's attention to detail in cost management saved us significant resources on our Tilisi development. Their professionalism is unmatched.",
+    quote: "Their attention to detail on cost management saved us real money on the Tilisi development, and their reporting made it easy to keep our board informed month after month.",
     company: "Nirma Holdings Ltd",
   },
   {
-    quote: "Working with Quantsol gave us complete confidence in our budget projections. Their team delivered precise BoQs and maintained excellent cost control throughout.",
+    quote: "We knew where our budget stood at every stage. The BoQs were tight, the cost control was disciplined, and questions were answered quickly.",
     company: "Kopoa Developers",
   },
   {
-    quote: "Their project management expertise ensured our development stayed on schedule despite complex challenges. A truly reliable partner in construction.",
+    quote: "Complex project, tight programme, and they kept us on schedule. A genuinely reliable partner when it mattered most.",
     company: "Panorama Ltd",
   },
 ];
@@ -155,7 +155,7 @@ const HomePage = () => {
               transition={{ duration: 0.8, delay: 0.4, ease: [0.23, 1, 0.32, 1] }}
               className="text-lg md:text-xl text-primary-foreground/70 leading-relaxed max-w-2xl mb-10"
             >
-              Professional Quantity Surveying, Project Management, and Facilities Management solutions across Kenya.
+              Quantity surveying, project management, and facilities management for developers, institutions, and government clients across Kenya and the wider region.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -228,10 +228,10 @@ const HomePage = () => {
             <span className="text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-4 block">Who We Are</span>
             <div className="gold-line mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-balance">
-              Trusted Consultancy Partner in Kenya's Construction Industry
+              A Trusted Partner in Kenya's Built Environment
             </h2>
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground mb-8">
-              Quantsol Consultants Limited is a trusted consultancy firm delivering cost-effective, sustainable, and client-focused solutions from concept to completion. Registered under Kenyan law with BORAQS-certified directors, we bring over a decade of expertise to every project.
+              Quantsol Consultants Limited works alongside developers, contractors and institutions to deliver projects that finish on time, on budget, and with the paper trail to prove it. We're registered under Kenyan law, led by three BORAQS-certified directors, and we've spent the last decade putting that discipline into practice on projects large and small.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -264,7 +264,7 @@ const HomePage = () => {
           <SectionHeader
             label="What We Do"
             title="Our Core Services"
-            description="We provide comprehensive consultancy services that cover every stage of the construction and property lifecycle."
+            description="Three connected disciplines that cover a building's whole life, from the first feasibility number to the day-to-day running of the finished asset."
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((s, i) => (
@@ -301,8 +301,8 @@ const HomePage = () => {
         <div className="section-container relative z-10">
           <SectionHeader
             label="Why Quantsol"
-            title="Why Choose Us"
-            description="We combine technical expertise with a client-focused approach to deliver measurable results on every project."
+            title="Why Clients Choose Us"
+            description="A working style built on discipline, honest reporting and a decade of practice on Kenyan sites."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {whyUs.map((item, i) => (

@@ -143,8 +143,8 @@ const PortfolioPage = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-primary-foreground max-w-3xl">
               Our Project Portfolio
             </h1>
-            <p className="text-primary-foreground/60 text-lg mt-6 max-w-2xl">
-              A proven track record of excellence across the built environment — from affordable housing to multi-billion shilling developments.
+            <p className="text-primary-foreground/70 text-lg mt-6 max-w-2xl leading-relaxed">
+              Twenty-five projects across residential, commercial, institutional and public housing, together valued at over Ksh 30 billion. A quick tour of the work we've been trusted with.
             </p>
           </ScrollReveal>
         </div>
