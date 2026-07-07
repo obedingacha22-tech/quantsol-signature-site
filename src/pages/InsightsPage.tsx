@@ -1064,7 +1064,7 @@ const InsightsPage = () => {
               Notes from Kenya's Built Environment
             </h1>
             <p className="text-primary-foreground/70 text-lg mt-6 max-w-2xl leading-relaxed">
-              Twenty articles on how projects actually get built, priced, and delivered in Kenya. Written for developers, contractors, and institutional clients who want the working version rather than the marketing one.
+              A monthly series of notes on how projects actually get built, priced, and delivered in Kenya. Written for developers, contractors, and institutional clients who want the working version rather than the marketing one.
             </p>
           </ScrollReveal>
         </div>
