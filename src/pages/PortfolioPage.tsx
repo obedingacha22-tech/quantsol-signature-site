@@ -99,7 +99,7 @@ interface Project {
   client: string;
   status: string;
   image: string;
-  isKdf?: boolean;
+  isRestricted?: boolean;
   isTilisi?: boolean;
 }
 
@@ -110,14 +110,14 @@ const projects: Project[] = [
   { name: "Kigali Office Block Development", client: "Mayfair Rwanda Ltd", status: "Award", image: projectOffice },
   { name: "Office Fitout Mayfair Centre", client: "Mayfair Kenya Ltd", status: "Ongoing", image: projectMayfairFitout },
   { name: "School Lane Apartments", client: "Panorama Ltd", status: "Design", image: projectSchoolLane },
-  { name: "KDF Accommodation Housing — PPP & Affordable", client: "CREC 10", status: "Ongoing", image: kdf1, isKdf: true },
+  { name: "KDF Accommodation Housing — PPP & Affordable", client: "CREC 10", status: "Ongoing", image: kdf1, isRestricted: true },
   { name: "Aeroclub Kitchen", client: "Aeroclub EA", status: "Design", image: projectAeroclub },
   { name: "Kitchen & Ablution Block", client: "Loreto Convent", status: "Ongoing", image: projectLoreto },
   { name: "Various Bank Fitouts (BoQ)", client: "Prime Bank", status: "Ongoing", image: projectBankFitout },
-  { name: "New Rehema House Fitout", client: "NFDK", status: "Ongoing", image: projectRehema },
+  { name: "New Rehema House Fitout", client: "NFDK", status: "Ongoing", image: projectRehema, isRestricted: true },
   { name: "Hacienda Michael", client: "Njau Ngacha Family", status: "Ongoing", image: projectHacienda },
   { name: "Moran Hotel", client: "Centcrete Ltd", status: "Award", image: projectMoran },
-  { name: "Masalani Works", client: "DMS", status: "Ongoing", image: projectMasalani },
+  { name: "Masalani Works", client: "DMS", status: "Ongoing", image: projectMasalani, isRestricted: true },
 ];
 
 const clients = [
@@ -158,26 +158,26 @@ const PortfolioPage = () => {
               <ScrollReveal key={i} delay={(i % 3) * 0.1}>
                 <div className={`group overflow-hidden card-hover bg-card ${p.isTilisi ? "md:col-span-2 lg:col-span-3" : ""}`}>
                   <div className="relative aspect-[16/10] overflow-hidden">
-                    {p.isKdf ? (
-                      <div className="w-full h-full bg-navy flex items-center justify-center p-6 text-center">
-                        <div>
-                          <div className="gold-line mx-auto mb-4" />
-                          <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-gold mb-2">Restricted Project</p>
-                          <p className="text-xs text-primary-foreground/60 max-w-xs">
-                            Site imagery withheld due to the sensitive nature of this engagement.
-                          </p>
-                        </div>
+                  {p.isRestricted ? (
+                    <div className="w-full h-full bg-navy flex items-center justify-center p-6 text-center">
+                      <div>
+                        <div className="gold-line mx-auto mb-4" />
+                        <p className="text-[10px] font-mono tracking-[0.2em] uppercase text-gold mb-2">Restricted Project</p>
+                        <p className="text-xs text-primary-foreground/60 max-w-xs">
+                          Site imagery withheld due to the sensitive nature of this engagement.
+                        </p>
                       </div>
-                    ) : (
-                      <img
-                        src={p.image}
-                        alt={p.name}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        loading="lazy"
-                        width={800}
-                        height={600}
-                      />
-                    )}
+                    </div>
+                  ) : (
+                    <img
+                      src={p.image}
+                      alt={p.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width={800}
+                      height={600}
+                    />
+                  )}
                     <div className="absolute top-4 right-4">
                       <span className={`text-xs font-mono tracking-wider px-3 py-1 ${
                         p.status === "Complete" ? "bg-accent/90 text-primary-foreground" : "bg-navy/80 text-primary-foreground"

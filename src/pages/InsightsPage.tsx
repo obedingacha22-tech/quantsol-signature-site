@@ -15,7 +15,7 @@ import projectSchoolLane from "@/assets/project-school-lane.jpg";
 import projectAeroclub from "@/assets/project-aeroclub.jpg";
 import projectLoreto from "@/assets/project-loreto.jpg";
 import projectBankFitout from "@/assets/project-bank-fitout.jpg";
-import projectRehema from "@/assets/project-rehema.jpg";
+
 import projectHacienda from "@/assets/project-hacienda.jpg";
 import projectMoran from "@/assets/project-moran.jpg";
 import aboutTeam from "@/assets/about-team.jpg";
@@ -629,7 +629,7 @@ const articles: Article[] = [
     title: "Retention, Defects Liability, and the Final Account",
     excerpt: "What actually happens after practical completion, and why the last five per cent of the money causes so much of the friction.",
     metaDescription: "Understand how retention money, the defects liability period, and the final account work on Kenyan construction contracts.",
-    image: projectRehema,
+    image: projectHacienda,
     category: "Contracts",
     author: "Quantsol Editorial",
     date: "July 22, 2025",
